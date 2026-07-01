@@ -8,6 +8,7 @@ claude-opus-4-6,Claude Opus 4.6,Anthropic,ga,text|image|vision,1000000,128000,5,
 claude-opus-4-5,Claude Opus 4.5,Anthropic,ga,text|image|vision,200000,64000,5,25,0.5,2025-05,,,,,claude-opus-4-5-20251101,https://platform.claude.com/docs/en/docs/about-claude/models/overview
 claude-opus-4-1,Claude Opus 4.1,Anthropic,deprecated,text|image|vision,200000,32000,15,75,1.5,2025-01,,2026-06-05,2026-08-05,claude-opus-4-8,claude-opus-4-1-20250805,https://platform.claude.com/docs/en/about-claude/model-deprecations
 claude-opus-4,Claude Opus 4,Anthropic,retired,text|image|vision,200000,,15,75,1.5,,,2026-04-14,2026-06-15,claude-opus-4-8,claude-opus-4-20250514,https://platform.claude.com/docs/en/about-claude/model-deprecations
+claude-sonnet-5,Claude Sonnet 5,Anthropic,ga,text|image|vision,1000000,128000,3,15,0.3,2026-01,2026-06-30,,,,claude-sonnet-5,https://platform.claude.com/docs/en/docs/about-claude/models/overview
 claude-sonnet-4-6,Claude Sonnet 4.6,Anthropic,ga,text|image|vision,1000000,128000,3,15,0.3,2025-08,,,,,claude-sonnet-4-6,https://platform.claude.com/docs/en/docs/about-claude/models/overview
 claude-sonnet-4-5,Claude Sonnet 4.5,Anthropic,ga,text|image|vision,200000,64000,3,15,0.3,2025-01,,,,,claude-sonnet-4-5-20250929,https://platform.claude.com/docs/en/docs/about-claude/models/overview
 claude-sonnet-4,Claude Sonnet 4,Anthropic,retired,text|image|vision,,,3,15,0.3,,,2026-04-14,2026-06-15,claude-sonnet-4-6,claude-sonnet-4-20250514,https://platform.claude.com/docs/en/about-claude/model-deprecations

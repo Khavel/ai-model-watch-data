@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-28",
+  "updated": "2026-07-01",
   "source": "Compiled from official provider documentation; flagship pricing adversarially verified.",
   "models": [
     {
@@ -219,6 +219,30 @@
       "source_url": "https://platform.claude.com/docs/en/about-claude/model-deprecations"
     },
     {
+      "id": "claude-sonnet-5",
+      "name": "Claude Sonnet 5",
+      "provider": "Anthropic",
+      "status": "ga",
+      "modality": [
+        "text",
+        "image",
+        "vision"
+      ],
+      "context_window": 1000000,
+      "max_output_tokens": 128000,
+      "price_input_per_mtok": 3,
+      "price_output_per_mtok": 15,
+      "price_cached_input_per_mtok": 0.3,
+      "knowledge_cutoff": "2026-01",
+      "released": "2026-06-30",
+      "deprecated_on": null,
+      "retires_on": null,
+      "replacement": null,
+      "api_string": "claude-sonnet-5",
+      "notes": "Best combination of speed and intelligence; Anthropic's most agentic Sonnet, performance close to Opus 4.8 at lower cost. Dateless pinned snapshot ID == alias claude-sonnet-5. Extended thinking: No; adaptive thinking: Yes (effort defaults to 'high' on the Claude API and Claude Code). 1M context at standard pricing; max output 128k (300k via Batch API beta header output-300k-2026-03-24). Prices shown are STANDARD ($3 in / $15 out, 5m cache $3.75, 1h cache $6, cache hit $0.30, Batch $1.50/$7.50). INTRODUCTORY pricing of $2 in / $10 out per MTok is in effect through August 31, 2026 (5m cache $2.50, 1h cache $4, cache hit $0.20, Batch $1/$5), reverting to standard on September 1, 2026 — WATCH: if standard is not yet in effect, current live cost is the intro rate. Uses the newer tokenizer (~30% more tokens for the same text). Reliable knowledge cutoff Jan 2026; training data cutoff Jan 2026. Supersedes Claude Sonnet 4.6 (now a legacy model). Released 2026-06-30 (system card date).",
+      "source_url": "https://platform.claude.com/docs/en/docs/about-claude/models/overview"
+    },
+    {
       "id": "claude-sonnet-4-6",
       "name": "Claude Sonnet 4.6",
       "provider": "Anthropic",
@@ -239,7 +263,7 @@
       "retires_on": null,
       "replacement": null,
       "api_string": "claude-sonnet-4-6",
-      "notes": "Best combination of speed and intelligence. Dateless pinned snapshot ID == alias claude-sonnet-4-6. Extended thinking: Yes; adaptive thinking: Yes. 1M context, max output 128k (300k via Batch API beta header). 5m cache $3.75, 1h cache $6, cache hits $0.30/MTok. Batch $1.50/$7.50. Reliable knowledge cutoff Aug 2025; training data cutoff Jan 2026. Tentative retirement not sooner than February 17, 2027. Release date not explicitly published (null).",
+      "notes": "Best combination of speed and intelligence. Dateless pinned snapshot ID == alias claude-sonnet-4-6. Extended thinking: Yes; adaptive thinking: Yes. 1M context, max output 128k (300k via Batch API beta header). 5m cache $3.75, 1h cache $6, cache hits $0.30/MTok. Batch $1.50/$7.50. Reliable knowledge cutoff Aug 2025; training data cutoff Jan 2026. Tentative retirement not sooner than February 17, 2027. Release date not explicitly published (null). Now a LEGACY model (still generally available, not deprecated) — superseded by Claude Sonnet 5 as of 2026-06-30; consider migrating for improved performance.",
       "source_url": "https://platform.claude.com/docs/en/docs/about-claude/models/overview"
     },
     {
