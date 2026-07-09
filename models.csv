@@ -94,7 +94,7 @@ pixtral-large,Pixtral Large,Mistral,deprecated,text|vision,128000,,,,,,2024-11-1
 pixtral-12b,Pixtral 12B,Mistral,deprecated,text|vision,,,,,,,2024-09,2025-12-02,2025-12-31,ministral-3-14b-latest,pixtral-12b-2409,https://docs.mistral.ai/getting-started/models/models_overview/
 ministral-3-14b,Ministral 3 14B,Mistral,ga,text|vision,,,0.2,0.2,,,2025-12-02,,,,ministral-3-14b-latest,https://mistral.ai/news/mistral-3/
 ministral-3-8b,Ministral 3 8B,Mistral,ga,text|vision,256000,,0.15,0.15,,,2025-12-02,,,,ministral-3-8b-latest,https://docs.mistral.ai/models/ministral-3-8b-25-12
-ministral-3-3b,Ministral 3 3B,Mistral,ga,text|vision,,,0.04,0.04,,,2025-12-02,,,,ministral-3-3b-latest,https://mistral.ai/news/mistral-3/
+ministral-3-3b,Ministral 3 3B,Mistral,ga,text|vision,,,0.1,0.1,,,2025-12-02,,,,ministral-3-3b-latest,https://mistral.ai/pricing/api/
 ministral-8b-2410,Ministral 8B (2410),Mistral,deprecated,text,,,,,,,2024-10,2025-12-02,2025-12-31,ministral-3-8b-latest,ministral-8b-2410,https://docs.mistral.ai/getting-started/models/models_overview/
 ministral-3b-2410,Ministral 3B (2410),Mistral,deprecated,text,,,,,,,2024-10,2025-12-02,2025-12-31,ministral-3-3b-latest,ministral-3b-2410,https://docs.mistral.ai/getting-started/models/models_overview/
 mistral-large-2-1,Mistral Large 2.1,Mistral,deprecated,text,128000,,,,,,2024-11,2026-02-27,2026-05-31,mistral-medium-latest,mistral-large-2411,https://docs.mistral.ai/getting-started/models/models_overview/

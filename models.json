@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-01",
+  "updated": "2026-07-09",
   "source": "Compiled from official provider documentation; flagship pricing adversarially verified.",
   "models": [
     {
@@ -2244,8 +2244,8 @@
       ],
       "context_window": null,
       "max_output_tokens": null,
-      "price_input_per_mtok": 0.04,
-      "price_output_per_mtok": 0.04,
+      "price_input_per_mtok": 0.1,
+      "price_output_per_mtok": 0.1,
       "price_cached_input_per_mtok": null,
       "knowledge_cutoff": null,
       "released": "2025-12-02",
@@ -2253,8 +2253,8 @@
       "retires_on": null,
       "replacement": null,
       "api_string": "ministral-3-3b-latest",
-      "notes": "Smallest Ministral 3 (v25.12), open-weight Apache 2.0, text+vision. Pricing $0.04/M in & out per search corroboration of mistral.ai/pricing 'Ministral 3B' (cheapest tier). Context window not published on official overview. Dated alias expected ministral-3-3b-2512.",
-      "source_url": "https://mistral.ai/news/mistral-3/"
+      "notes": "Smallest Ministral 3 (v25.12), open-weight Apache 2.0, text+vision. Pricing $0.10/M in & out per the official API pricing page (mistral.ai/pricing/api), verified 2026-07-09. CORRECTION: previously stored as $0.04/M from a weak general-pricing 'cheapest tier' search corroboration — the authoritative per-model API table lists $0.10/M in & out. Context window not published on official overview. Dated alias expected ministral-3-3b-2512.",
+      "source_url": "https://mistral.ai/pricing/api/"
     },
     {
       "id": "ministral-8b-2410",
