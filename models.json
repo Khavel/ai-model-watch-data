@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-09",
+  "updated": "2026-07-11",
   "source": "Compiled from official provider documentation; flagship pricing adversarially verified.",
   "models": [
     {
@@ -1306,6 +1306,30 @@
       "api_string": "gemini-2.0-flash-lite",
       "notes": "RETIRED/shut down 2026-06-01 (deprecations page, alongside gemini-2.0-flash-lite-001). No longer callable as of 2026-06-28. Context caching not offered (cached input null). Max output 8,192 tokens. Knowledge cutoff not separately confirmed on a dedicated spec page; inferred August 2024 same as gemini-2.0-flash family - LOW confidence, treat as approximate. Modalities inferred from the 2.0 family - moderate confidence. Replacement gemini-3.1-flash-lite. Released 2025-02-25 per deprecations page.",
       "source_url": "https://ai.google.dev/gemini-api/docs/deprecations"
+    },
+    {
+      "id": "grok-4-5",
+      "name": "Grok 4.5",
+      "provider": "xAI",
+      "status": "ga",
+      "modality": [
+        "text-in",
+        "image-in",
+        "text-out"
+      ],
+      "context_window": 500000,
+      "max_output_tokens": null,
+      "price_input_per_mtok": 2,
+      "price_output_per_mtok": 6,
+      "price_cached_input_per_mtok": 0.5,
+      "knowledge_cutoff": null,
+      "released": "2026-07-08",
+      "deprecated_on": null,
+      "retires_on": null,
+      "replacement": null,
+      "api_string": "grok-4.5",
+      "notes": "New flagship launched 2026-07-08 (public access 2026-07-09); xAI's smartest model for chat, coding, agentic and knowledge work per docs.x.ai. Aliases: grok-4.5-latest, grok-build-latest. Modality 'text, image -> text' (vision) per official model page. Cached input $0.50/M confirmed on the official model page. TIERED pricing: figures shown are the base tier for prompts <=200K tokens; prompts >200K are billed 2x ($4/M input, $1/M cached, $12/M output). 500K context window (smaller than Grok 4.3's 1M). Max output tokens and knowledge cutoff not published on the docs page.",
+      "source_url": "https://docs.x.ai/developers/models/grok-4.5"
     },
     {
       "id": "grok-4-3",

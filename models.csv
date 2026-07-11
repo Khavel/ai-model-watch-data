@@ -54,6 +54,7 @@ gemini-2-5-flash,Gemini 2.5 Flash,Google,deprecated,text|image|video|audio,10485
 gemini-2-5-flash-lite,Gemini 2.5 Flash-Lite,Google,deprecated,text|image|video|audio|pdf,1048576,65536,0.1,0.4,0.01,2025-01,2025-07-22,,2026-10-16,gemini-3.1-flash-lite,gemini-2.5-flash-lite,https://ai.google.dev/gemini-api/docs/models/gemini-2.5-flash-lite
 gemini-2-0-flash,Gemini 2.0 Flash,Google,retired,text|image|video|audio,1048576,8192,0.1,0.4,0.025,2024-08,2025-02-05,,2026-06-01,gemini-3.5-flash,gemini-2.0-flash,https://ai.google.dev/gemini-api/docs/models/gemini-2.0-flash
 gemini-2-0-flash-lite,Gemini 2.0 Flash-Lite,Google,retired,text|image|video|audio,1048576,8192,0.075,0.3,,2024-08,2025-02-25,,2026-06-01,gemini-3.1-flash-lite,gemini-2.0-flash-lite,https://ai.google.dev/gemini-api/docs/deprecations
+grok-4-5,Grok 4.5,xAI,ga,text-in|image-in|text-out,500000,,2,6,0.5,,2026-07-08,,,,grok-4.5,https://docs.x.ai/developers/models/grok-4.5
 grok-4-3,Grok 4.3,xAI,ga,text-in|image-in|text-out,1000000,,1.25,2.5,0.2,,2026-04-30,,,,grok-4.3,https://docs.x.ai/developers/models/grok-4.3
 grok-4-20-0309-reasoning,Grok 4.20 (0309) Reasoning,xAI,ga,text-in|image-in|text-out,1000000,,1.25,2.5,0.2,,,,,,grok-4.20-0309-reasoning,https://docs.x.ai/developers/models/grok-4.20-0309-reasoning
 grok-4-20-0309-non-reasoning,Grok 4.20 (0309) Non-Reasoning,xAI,ga,text-in|image-in|text-out,1000000,,1.25,2.5,0.2,,,,,,grok-4.20-0309-non-reasoning,https://docs.x.ai/developers/models/grok-4.20-0309-non-reasoning
