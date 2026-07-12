@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-11",
+  "updated": "2026-07-12",
   "source": "Compiled from official provider documentation; flagship pricing adversarially verified.",
   "models": [
     {
@@ -411,6 +411,75 @@
       "source_url": "https://platform.claude.com/docs/en/about-claude/model-deprecations"
     },
     {
+      "id": "gpt-5-6-sol",
+      "name": "GPT-5.6 Sol",
+      "provider": "OpenAI",
+      "status": "ga",
+      "modality": [
+        "text",
+        "image"
+      ],
+      "context_window": 1050000,
+      "max_output_tokens": 128000,
+      "price_input_per_mtok": 5,
+      "price_output_per_mtok": 30,
+      "price_cached_input_per_mtok": 0.5,
+      "knowledge_cutoff": "2026-02-16",
+      "released": "2026-07-09",
+      "deprecated_on": null,
+      "retires_on": null,
+      "replacement": null,
+      "api_string": "gpt-5.6-sol",
+      "notes": "Current OpenAI flagship — the top 'Sol' tier of the GPT-5.6 family (Sol/Terra/Luna), GA on the API + Codex 2026-07-09 (preview from 2026-06-26). Text+image input, text output, configurable reasoning effort. Priced identically to GPT-5.5 ($5/$0.50/$30) but stronger on coding/knowledge-work/cyber/science per OpenAI. New caching model: explicit cache breakpoints, 30-min min cache life, cache writes billed 1.25x uncached input, reads keep the 90% discount. Standard tier; batch ~50%.",
+      "source_url": "https://developers.openai.com/api/docs/models/gpt-5.6-sol"
+    },
+    {
+      "id": "gpt-5-6-terra",
+      "name": "GPT-5.6 Terra",
+      "provider": "OpenAI",
+      "status": "ga",
+      "modality": [
+        "text",
+        "image"
+      ],
+      "context_window": 1050000,
+      "max_output_tokens": 128000,
+      "price_input_per_mtok": 2.5,
+      "price_output_per_mtok": 15,
+      "price_cached_input_per_mtok": 0.25,
+      "knowledge_cutoff": "2026-02-16",
+      "released": "2026-07-09",
+      "deprecated_on": null,
+      "retires_on": null,
+      "replacement": null,
+      "api_string": "gpt-5.6-terra",
+      "notes": "Balanced 'Terra' tier of the GPT-5.6 family — GPT-5.5-class quality at lower cost, positioned for everyday work. GA on the API + Codex 2026-07-09. Text+image input, text output. Pricing from developers.openai.com/api/docs/pricing (standard tier); batch ~50%.",
+      "source_url": "https://developers.openai.com/api/docs/models/gpt-5.6-terra"
+    },
+    {
+      "id": "gpt-5-6-luna",
+      "name": "GPT-5.6 Luna",
+      "provider": "OpenAI",
+      "status": "ga",
+      "modality": [
+        "text",
+        "image"
+      ],
+      "context_window": 1050000,
+      "max_output_tokens": 128000,
+      "price_input_per_mtok": 1,
+      "price_output_per_mtok": 6,
+      "price_cached_input_per_mtok": 0.1,
+      "knowledge_cutoff": "2026-02-16",
+      "released": "2026-07-09",
+      "deprecated_on": null,
+      "retires_on": null,
+      "replacement": null,
+      "api_string": "gpt-5.6-luna",
+      "notes": "Fast, cost-efficient 'Luna' tier of the GPT-5.6 family — built for high-volume tasks. GA on the API + Codex 2026-07-09. Text+image input, text output, full 1.05M context. Pricing from developers.openai.com/api/docs/pricing (standard tier); batch ~50%.",
+      "source_url": "https://developers.openai.com/api/docs/models/gpt-5.6-luna"
+    },
+    {
       "id": "gpt-5-5",
       "name": "GPT-5.5",
       "provider": "OpenAI",
@@ -430,7 +499,7 @@
       "retires_on": null,
       "replacement": null,
       "api_string": "gpt-5.5",
-      "notes": "Current flagship. Snapshot alias gpt-5.5-2026-04-23 (snapshot date taken as release date). Input/Text-only output, configurable reasoning effort. Pricing from developers.openai.com/api/docs/pricing (standard tier); batch tier is ~50% ($2.50/$0.25/$15.00).",
+      "notes": "Prior flagship, still GA — superseded as OpenAI's top tier by GPT-5.6 Sol (2026-07-09) at the same $5/$0.50/$30 price. Snapshot alias gpt-5.5-2026-04-23 (snapshot date taken as release date). Text input / text output, configurable reasoning effort. Pricing from developers.openai.com/api/docs/pricing (standard tier); batch tier is ~50% ($2.50/$0.25/$15.00).",
       "source_url": "https://developers.openai.com/api/docs/models/gpt-5.5"
     },
     {
