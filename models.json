@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-15",
+  "updated": "2026-07-16",
   "source": "Compiled from official provider documentation; flagship pricing adversarially verified.",
   "models": [
     {
@@ -2399,7 +2399,7 @@
       "api_string": "ministral-3-14b-latest",
       "notes": "Ministral 3 family (v25.12), open-weight Apache 2.0, text+vision, 40+ languages. Pricing $0.2/M in & out (mistral.ai/pricing, 2026-06-28, listed as 'Ministral 14B'). Context window not published on official overview (Large 3 / Small 4 are 256k; Ministral 3 not explicitly stated). Dated alias expected ministral-3-14b-2512.",
       "source_url": "https://mistral.ai/news/mistral-3/",
-      "open_weight": null
+      "open_weight": true
     },
     {
       "id": "ministral-3-8b",
@@ -2423,7 +2423,7 @@
       "api_string": "ministral-3-8b-latest",
       "notes": "Ministral 3 family (v25.12), open-weight Apache 2.0, text+vision, edge deployment. Official model page states 256k context. Pricing $0.15/M in & out (mistral.ai/pricing 'Ministral 8B', 2026-06-28). Dated alias on page shown as ministral-8b-2512 / ministral-3-8b-2512.",
       "source_url": "https://docs.mistral.ai/models/ministral-3-8b-25-12",
-      "open_weight": null
+      "open_weight": true
     },
     {
       "id": "ministral-3-3b",
@@ -2447,7 +2447,7 @@
       "api_string": "ministral-3-3b-latest",
       "notes": "Smallest Ministral 3 (v25.12), open-weight Apache 2.0, text+vision. Pricing $0.10/M in & out per the official API pricing page (mistral.ai/pricing/api), verified 2026-07-09. CORRECTION: previously stored as $0.04/M from a weak general-pricing 'cheapest tier' search corroboration — the authoritative per-model API table lists $0.10/M in & out. Context window not published on official overview. Dated alias expected ministral-3-3b-2512.",
       "source_url": "https://mistral.ai/pricing/api/",
-      "open_weight": null
+      "open_weight": true
     },
     {
       "id": "ministral-8b-2410",
@@ -2748,7 +2748,7 @@
       "api_string": "command-a-plus-05-2026",
       "notes": "Cohere's first Mixture-of-Experts model; combines vision input, agentic/reasoning, and world-class translation. Endpoint: Chat. Per-token pricing NOT publicly listed (premium Command A variant; gated behind sales@cohere.com per multiple 2026 trackers), so input/output prices set null rather than guessed. Context 128k / max output 64k confirmed from docs.cohere.com/docs/models.md. Knowledge cutoff not published by Cohere.",
       "source_url": "https://docs.cohere.com/docs/models",
-      "open_weight": null
+      "open_weight": true
     },
     {
       "id": "command-a-03-2025",
@@ -3906,7 +3906,7 @@
       "api_string": "qwen3.5-omni-plus",
       "notes": "Current Omni (any-to-any) model in the lineup, listed on the official Models overview (Jun 22, 2026) for image/video understanding, speech-to-speech, and omni use cases; a realtime variant qwen3.5-omni-plus-realtime also exists. Pricing not captured here (omni/audio pricing is on separate per-modality tables of the pricing page billed per token AND per second/character for audio; not a simple per-1M-token text rate). Context/output/release not on the accessible (server-rendered) pages -> null. Multimodal (text/image/audio/video in, text+audio out).",
       "source_url": "https://www.alibabacloud.com/help/en/model-studio/models",
-      "open_weight": null
+      "open_weight": false
     },
     {
       "id": "qwen3-rerank",
@@ -3929,7 +3929,7 @@
       "api_string": "qwen3-rerank",
       "notes": "Current reranking model; listed as the replacement for the deprecated gte-rerank (gte-rerank deprecation 2026-05-30 per official deprecation table). Rerank models are not priced per input/output token in the standard text table; pricing null here. Included because it is the current GA rerank model in the lineup.",
       "source_url": "https://www.alibabacloud.com/help/en/model-studio/model-depreciation",
-      "open_weight": null
+      "open_weight": true
     },
     {
       "id": "qwen3-235b-a22b",
