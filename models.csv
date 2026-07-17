@@ -107,6 +107,10 @@ mistral-medium-3-1,Mistral Medium 3.1,Mistral,deprecated,text|vision,,,,,,,2025-
 mistral-nemo,Mistral NeMo,Mistral,deprecated,text,128000,,,,,,2024-07,2026-05-22,2026-07-31,ministral-3-8b-latest,open-mistral-nemo-2407,https://docs.mistral.ai/getting-started/models/models_overview/
 mixtral-8x22b,Mixtral 8x22B,Mistral,retired,text,64000,,,,,,2024-04,2024-11-30,2025-03-30,mistral-small-2603,open-mixtral-8x22b,https://docs.mistral.ai/getting-started/models/models_overview/
 mixtral-8x7b,Mixtral 8x7B,Mistral,retired,text,32000,,,,,,2023-12,2024-11-30,2025-03-30,mistral-small-2603,open-mixtral-8x7b,https://docs.mistral.ai/getting-started/models/models_overview/
+magistral-medium-1-2,Magistral Medium 1.2,Mistral,deprecated,text|vision,128000,,2,5,,,2025-09-18,2026-05-22,2026-07-31,mistral-medium-3-5,magistral-medium-2509,https://docs.mistral.ai/models/magistral-medium-1-2-25-09
+magistral-small-1-2,Magistral Small 1.2,Mistral,deprecated,text|vision,128000,,0.5,1.5,,,2025-09-18,2026-04-30,2026-07-31,mistral-small-4,magistral-small-2509,https://docs.mistral.ai/models/magistral-small-1-2-25-09
+devstral-2,Devstral 2,Mistral,deprecated,text,256000,,0.4,2,,,2025-12-09,2026-05-22,2026-07-31,mistral-medium-3-5,devstral-2512,https://docs.mistral.ai/models/devstral-2-25-12
+devstral-small-2,Devstral Small 2,Mistral,deprecated,text|vision,256000,,0.1,0.3,,,2025-12-09,2026-02-27,2026-03-31,mistral-medium-3-5,labs-devstral-small-2512,https://docs.mistral.ai/models/devstral-small-2-25-12
 deepseek-v4-flash,DeepSeek-V4-Flash,DeepSeek,preview,text,1000000,384000,0.14,0.28,0.0028,,2026-04-24,,,,deepseek-v4-flash,https://api-docs.deepseek.com/quick_start/pricing
 deepseek-v4-pro,DeepSeek-V4-Pro,DeepSeek,preview,text,1000000,384000,0.435,0.87,0.003625,,2026-04-24,,,,deepseek-v4-pro,https://api-docs.deepseek.com/quick_start/pricing
 deepseek-chat,deepseek-chat (legacy alias),DeepSeek,deprecated,text,1000000,384000,0.14,0.28,0.0028,,,,2026-07-24,deepseek-v4-flash,deepseek-chat,https://api-docs.deepseek.com/news/news260424

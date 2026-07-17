@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-16",
+  "updated": "2026-07-17",
   "source": "Compiled from official provider documentation; flagship pricing adversarially verified.",
   "models": [
     {
@@ -2632,6 +2632,101 @@
       "api_string": "open-mixtral-8x7b",
       "notes": "Open-weight MoE. Deprecated 2024-11-30, retired 2025-03-30, replacement Mistral Small 4. Context 32k commonly cited but not confirmed on the legacy table; treat as approximate.",
       "source_url": "https://docs.mistral.ai/getting-started/models/models_overview/",
+      "open_weight": true
+    },
+    {
+      "id": "magistral-medium-1-2",
+      "name": "Magistral Medium 1.2",
+      "provider": "Mistral",
+      "status": "deprecated",
+      "modality": [
+        "text",
+        "vision"
+      ],
+      "context_window": 128000,
+      "max_output_tokens": null,
+      "price_input_per_mtok": 2,
+      "price_output_per_mtok": 5,
+      "price_cached_input_per_mtok": null,
+      "knowledge_cutoff": null,
+      "released": "2025-09-18",
+      "deprecated_on": "2026-05-22",
+      "retires_on": "2026-07-31",
+      "replacement": "mistral-medium-3-5",
+      "api_string": "magistral-medium-2509",
+      "notes": "Mistral's frontier multimodal reasoning model (v25.09); alias magistral-medium-latest -> magistral-medium-2509. Premier tier: API-only, no published weights. Text + image in, reasoning + text out. DEPRECATED 2026-05-22, RETIRES 2026-07-31 -> Mistral Medium 3.5, as Mistral folds its specialist reasoning line back into its general-purpose models. Lifecycle, price and context from Mistral's official docs model schema; $2/M in, $5/M out corroborated by the per-model table at mistral.ai/pricing/api, which still lists it as a current offering (the docs schema is the more precise surface for lifecycle). Max output and knowledge cutoff not published -> null.",
+      "source_url": "https://docs.mistral.ai/models/magistral-medium-1-2-25-09",
+      "open_weight": false
+    },
+    {
+      "id": "magistral-small-1-2",
+      "name": "Magistral Small 1.2",
+      "provider": "Mistral",
+      "status": "deprecated",
+      "modality": [
+        "text",
+        "vision"
+      ],
+      "context_window": 128000,
+      "max_output_tokens": null,
+      "price_input_per_mtok": 0.5,
+      "price_output_per_mtok": 1.5,
+      "price_cached_input_per_mtok": null,
+      "knowledge_cutoff": null,
+      "released": "2025-09-18",
+      "deprecated_on": "2026-04-30",
+      "retires_on": "2026-07-31",
+      "replacement": "mistral-small-4",
+      "api_string": "magistral-small-2509",
+      "notes": "Mistral's small multimodal reasoning model (v25.09); alias magistral-small-latest -> magistral-small-2509. Open weights: Apache 2.0, 24B dense (huggingface.co/mistralai/Magistral-Small-2509). Text + image in, reasoning + text out. DEPRECATED 2026-04-30, RETIRES 2026-07-31 -> Mistral Small 4. Lifecycle, price and context from Mistral's official docs model schema; $0.5/M in, $1.50/M out corroborated by mistral.ai/pricing/api. Max output and knowledge cutoff not published -> null.",
+      "source_url": "https://docs.mistral.ai/models/magistral-small-1-2-25-09",
+      "open_weight": true
+    },
+    {
+      "id": "devstral-2",
+      "name": "Devstral 2",
+      "provider": "Mistral",
+      "status": "deprecated",
+      "modality": [
+        "text"
+      ],
+      "context_window": 256000,
+      "max_output_tokens": null,
+      "price_input_per_mtok": 0.4,
+      "price_output_per_mtok": 2,
+      "price_cached_input_per_mtok": null,
+      "knowledge_cutoff": null,
+      "released": "2025-12-09",
+      "deprecated_on": "2026-05-22",
+      "retires_on": "2026-07-31",
+      "replacement": "mistral-medium-3-5",
+      "api_string": "devstral-2512",
+      "notes": "Mistral's frontier agentic-coding model for software-engineering tasks (v25.12); aliases devstral-latest and devstral-medium-latest -> devstral-2512. Open weights: Modified MIT, 123B (huggingface.co/mistralai/Devstral-2-123B-Instruct-2512). Text in, text out. DEPRECATED 2026-05-22, RETIRES 2026-07-31 -> Mistral Medium 3.5, as Mistral folds its specialist coding line back into its general-purpose models. Lifecycle, price and context from Mistral's official docs model schema; $0.40/M in, $2/M out corroborated by mistral.ai/pricing/api, which still lists it as a current offering. Max output and knowledge cutoff not published -> null.",
+      "source_url": "https://docs.mistral.ai/models/devstral-2-25-12",
+      "open_weight": true
+    },
+    {
+      "id": "devstral-small-2",
+      "name": "Devstral Small 2",
+      "provider": "Mistral",
+      "status": "deprecated",
+      "modality": [
+        "text",
+        "vision"
+      ],
+      "context_window": 256000,
+      "max_output_tokens": null,
+      "price_input_per_mtok": 0.1,
+      "price_output_per_mtok": 0.3,
+      "price_cached_input_per_mtok": null,
+      "knowledge_cutoff": null,
+      "released": "2025-12-09",
+      "deprecated_on": "2026-02-27",
+      "retires_on": "2026-03-31",
+      "replacement": "mistral-medium-3-5",
+      "api_string": "labs-devstral-small-2512",
+      "notes": "Small agentic-coding model (v25.12), Labs tier; alias devstral-small-latest -> labs-devstral-small-2512. Open weights: Apache 2.0, 24B. Text + image in, text out. DEPRECATED 2026-02-27 with a stated retirement of 2026-03-31 -> Mistral Medium 3.5. That date has passed, but Mistral still lists the model as deprecated rather than retired and still prices it publicly, so we record the status Mistral states rather than inferring a retirement it has not declared. Price and context from the official docs model schema, corroborated by mistral.ai/pricing/api. Max output and knowledge cutoff not published -> null.",
+      "source_url": "https://docs.mistral.ai/models/devstral-small-2-25-12",
       "open_weight": true
     },
     {
