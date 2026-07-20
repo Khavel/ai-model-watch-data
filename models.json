@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-17",
+  "updated": "2026-07-20",
   "source": "Compiled from official provider documentation; flagship pricing adversarially verified.",
   "models": [
     {
@@ -2727,6 +2727,30 @@
       "api_string": "labs-devstral-small-2512",
       "notes": "Small agentic-coding model (v25.12), Labs tier; alias devstral-small-latest -> labs-devstral-small-2512. Open weights: Apache 2.0, 24B. Text + image in, text out. DEPRECATED 2026-02-27 with a stated retirement of 2026-03-31 -> Mistral Medium 3.5. That date has passed, but Mistral still lists the model as deprecated rather than retired and still prices it publicly, so we record the status Mistral states rather than inferring a retirement it has not declared. Price and context from the official docs model schema, corroborated by mistral.ai/pricing/api. Max output and knowledge cutoff not published -> null.",
       "source_url": "https://docs.mistral.ai/models/devstral-small-2-25-12",
+      "open_weight": true
+    },
+    {
+      "id": "labs-leanstral-1-5",
+      "name": "Leanstral 1.5",
+      "provider": "Mistral",
+      "status": "preview",
+      "modality": [
+        "text",
+        "vision"
+      ],
+      "context_window": 256000,
+      "max_output_tokens": 128000,
+      "price_input_per_mtok": 0,
+      "price_output_per_mtok": 0,
+      "price_cached_input_per_mtok": null,
+      "knowledge_cutoff": null,
+      "released": "2026-06-30",
+      "deprecated_on": null,
+      "retires_on": "2026-09-30",
+      "replacement": null,
+      "api_string": "labs-leanstral-1-5",
+      "notes": "Specialist model for Lean 4 formal proof engineering, automated theorem proving and autoformalization -> not a general chat model. Labs tier, sparse MoE 119B total / 6.5B active. FREE during the Labs preview: pricing.free=true, $0/M in and out per the official docs model schema. Open weights: Apache 2.0 (huggingface.co/mistralai/Leanstral-1.5-119B-A6B). Text + image in, text out; 256K context, 128K max output. Mistral marks it status Active in its experimental Labs tier with a stated retirement of 2026-09-30 -> we normalize Labs/experimental to preview (it is not a GA production model), which also keeps the catalog's first $0 model out of the GA 'cheapest' rankings where a free specialist would rank misleadingly. Knowledge cutoff not published -> null.",
+      "source_url": "https://mistral.ai/news/leanstral-1-5/",
       "open_weight": true
     },
     {
