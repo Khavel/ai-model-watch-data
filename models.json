@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-22",
+  "updated": "2026-07-23",
   "source": "Compiled from official provider documentation; flagship pricing adversarially verified.",
   "models": [
     {
@@ -3898,6 +3898,57 @@
       "source_url": "https://aws.amazon.com/about-aws/whats-new/2025/12/nova-2-foundation-models-amazon-bedrock/",
       "open_weight": false,
       "embedding_dimensions": null
+    },
+    {
+      "id": "amazon-titan-embed-text-v2",
+      "name": "Amazon Titan Text Embeddings V2",
+      "provider": "Amazon",
+      "status": "ga",
+      "modality": [
+        "text"
+      ],
+      "context_window": 8192,
+      "max_output_tokens": null,
+      "price_input_per_mtok": 0.02,
+      "price_output_per_mtok": null,
+      "price_cached_input_per_mtok": null,
+      "knowledge_cutoff": null,
+      "released": "2024-04-30",
+      "deprecated_on": null,
+      "retires_on": null,
+      "replacement": null,
+      "api_string": "amazon.titan-embed-text-v2:0",
+      "notes": "Text embedding model (2nd-gen Titan). Output is an embedding vector, not tokens, so there is no output-token price. Input limit 8,192 tokens (~50,000 chars); output dimensions flexible 256 / 512 / 1,024 (default 1,024). Price is the us-east-1 on-demand rate from the AWS Price List API ($0.00002/1K input; batch $0.01/M). Model card lifecycle: Active; 'Model EOL date: No sooner than 4/30/2024' is a floor, not a fixed retirement, so lifecycle fields stay null.",
+      "source_url": "https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-amazon-titan-text-embeddings-v2.html",
+      "open_weight": false,
+      "embedding_dimensions": 1024
+    },
+    {
+      "id": "amazon-nova-2-multimodal-embeddings",
+      "name": "Amazon Nova Multimodal Embeddings",
+      "provider": "Amazon",
+      "status": "ga",
+      "modality": [
+        "text",
+        "image",
+        "video",
+        "audio"
+      ],
+      "context_window": 8192,
+      "max_output_tokens": null,
+      "price_input_per_mtok": 0.135,
+      "price_output_per_mtok": null,
+      "price_cached_input_per_mtok": null,
+      "knowledge_cutoff": null,
+      "released": "2025-10-28",
+      "deprecated_on": null,
+      "retires_on": null,
+      "replacement": null,
+      "api_string": "amazon.nova-2-multimodal-embeddings-v1:0",
+      "notes": "Unified multimodal embedding model (text, documents, images, video, audio in; vector out — no output-token price). Context up to 8K tokens; video/audio segments up to 30s with built-in chunking; sync + async (StartAsyncInvoke) APIs. Output dimensions 3,072 / 1,024 / 384 / 256 (docs examples default 3,072). The $0.135/M figure is the TEXT input rate (us-east-1 on-demand, AWS Price List API: $0.000135/1K); other inputs billed separately — standard image $0.00006/image, document image $0.0006/image, audio $0.00014/s, video $0.0007/s (batch = 50% of each). Model card lifecycle: Active, EOL N/A.",
+      "source_url": "https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-amazon-amazon-nova-multimodal-embeddings.html",
+      "open_weight": false,
+      "embedding_dimensions": 3072
     },
     {
       "id": "qwen3-7-max",
