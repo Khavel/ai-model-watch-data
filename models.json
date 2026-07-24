@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-23",
+  "updated": "2026-07-24",
   "source": "Compiled from official provider documentation; flagship pricing adversarially verified.",
   "models": [
     {
@@ -4372,6 +4372,30 @@
       "source_url": "https://www.alibabacloud.com/help/en/model-studio/model-depreciation",
       "open_weight": true,
       "embedding_dimensions": null
+    },
+    {
+      "id": "qwen-text-embedding-v4",
+      "name": "Qwen Text-Embedding v4",
+      "provider": "Alibaba",
+      "status": "ga",
+      "modality": [
+        "text"
+      ],
+      "context_window": 8192,
+      "max_output_tokens": null,
+      "price_input_per_mtok": 0.07,
+      "price_output_per_mtok": null,
+      "price_cached_input_per_mtok": null,
+      "knowledge_cutoff": null,
+      "released": null,
+      "deprecated_on": null,
+      "retires_on": null,
+      "replacement": null,
+      "api_string": "text-embedding-v4",
+      "notes": "Alibaba Model Studio (DashScope) commercial text/code embedding model, based on the Qwen3-Embedding family. Output is an embedding vector, not tokens, so there is no output-token price. Max input 8,192 tokens per text; batch up to 10 texts per call. Flexible (MRL) output dimensions: 2048 / 1536 / 1024 (default) / 768 / 512 / 256 / 128 / 64. Supports 100+ languages incl. programming languages, plus task instructions and sparse vectors. The $0.07/1M figure is the Singapore/Hong Kong international-region rate; Beijing region is $0.072/1M. The open-weight Qwen3-Embedding checkpoints (0.6B/4B/8B, Apache-2.0 on Hugging Face) are separate downloadable models, not this hosted API; open_weight here reflects the commercial API model. Docs fetched 2026-07-24.",
+      "source_url": "https://www.alibabacloud.com/help/en/model-studio/embedding",
+      "open_weight": false,
+      "embedding_dimensions": 1024
     },
     {
       "id": "qwen3-235b-a22b",
