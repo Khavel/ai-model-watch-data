@@ -4055,6 +4055,35 @@
       "price_per_1k_searches": null
     },
     {
+      "id": "amazon-nova-2-omni",
+      "name": "Amazon Nova 2 Omni",
+      "provider": "Amazon",
+      "status": "preview",
+      "modality": [
+        "text",
+        "image",
+        "video",
+        "audio",
+        "image-out"
+      ],
+      "context_window": null,
+      "max_output_tokens": null,
+      "price_input_per_mtok": 0.3,
+      "price_output_per_mtok": 2.5,
+      "price_cached_input_per_mtok": null,
+      "knowledge_cutoff": null,
+      "released": null,
+      "deprecated_on": null,
+      "retires_on": null,
+      "replacement": null,
+      "api_string": null,
+      "notes": "The omni-modal Nova 2 variant, and the only Nova 2 row that GENERATES images. AWS lists it as 'Amazon Nova 2 Omni (Preview)' on the Bedrock pricing page, whose table headings state its input modalities as Text, Image, Video, Audio and give it both a text-output and an image-output token column. No specs are published anywhere first-party: the Bedrock model card (model-card-amazon-nova-2-omni.html) and the Nova user-guide omni pages all soft-404 (HTTP 200, 1,033-1,048 byte meta-refresh stub to the guide index, checked 2026-07-28), and the Dec 2025 Nova 2 launch announcement does not mention Omni at all. Context window, max output, model ID, knowledge cutoff and release date therefore stay null rather than guessed. Prices read first-party on 2026-07-28 from the AWS Price List API (public, keyless): pricing.us-east-1.amazonaws.com/offers/v1.0/aws/AmazonBedrock/current/us-east-1/index.json, version 20260723233555 (2026-07-23), 49 Omni SKUs. Headline = Global Cross-region Inference, Standard tier (the only tier AWS shows Nova 2 under): USE1-Nova2.0Omni-text-input-tokens-cross-region-global $0.0003/1K = $0.30/M; -text-output-tokens-cross-region-global $0.0025/1K = $2.50/M. Image and video input bill at the same $0.30/M as text; AUDIO input is priced separately at $1.00/M and IMAGE OUTPUT at $40.00/M. Unlike Nova 2 Lite/Pro, the us-east-1 in-region SKUs are not a flat markup: text input is identical ($0.30/M), text output is $2.80/M, audio input $1.10/M, image output $44.00/M. No cache-read SKU is published (0 cache SKUs across all 49 Omni usagetypes), so cached input stays null. Web grounding $0.03 per request. Batch and Flex tiers are roughly half of Standard and Priority is higher, per their own SKUs.",
+      "source_url": "https://aws.amazon.com/bedrock/pricing/",
+      "open_weight": false,
+      "embedding_dimensions": null,
+      "price_per_1k_searches": null
+    },
+    {
       "id": "amazon-titan-embed-text-v2",
       "name": "Amazon Titan Text Embeddings V2",
       "provider": "Amazon",
