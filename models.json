@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-28",
+  "updated": "2026-07-29",
   "source": "Compiled from official provider documentation; flagship pricing adversarially verified.",
   "models": [
     {
@@ -239,7 +239,7 @@
       "retires_on": "2026-06-15",
       "replacement": "claude-opus-4-8",
       "api_string": "claude-opus-4-20250514",
-      "notes": "RETIRED June 15, 2026 on Anthropic-operated platforms (deprecated April 14, 2026); pricing page notes still available on Google Cloud. Recommended replacement claude-opus-4-8. API ID claude-opus-4-20250514. Pricing $15 in / $75 out; 5m cache $18.75, 1h cache $30, cache hits $1.50/MTok; Batch $7.50/$37.50. Snapshot date 20250514 implies a May 14, 2025 release. context_window 200k reflects the Opus 4-class family norm but is NOT on current official pages (not directly corroborated); max output left null.",
+      "notes": "RETIRED June 15, 2026 on Anthropic-operated platforms (deprecated April 14, 2026); the pricing page states it is still served on Google Cloud. Recommended replacement claude-opus-4-8. API ID claude-opus-4-20250514. PRICE CONFIRMED FIRST-PARTY 2026-07-29 against platform.claude.com/docs/en/about-claude/pricing.md, whose model-pricing table retains retired models with their rates and labels this row '(retired, except on Google Cloud)': $15 in / $75 out, 5m cache write $18.75, 1h cache write $30, cache hits & refreshes $1.50/MTok — unchanged to the cent. Batch $7.50/$37.50. Snapshot date 20250514 implies a May 14, 2025 release. Separate open item, NOT about price: context_window 200000 reflects the Opus 4-class family norm and is not stated on any current official page; max_output_tokens left null.",
       "source_url": "https://platform.claude.com/docs/en/about-claude/model-deprecations",
       "open_weight": false,
       "embedding_dimensions": null,
@@ -347,7 +347,7 @@
       "retires_on": "2026-06-15",
       "replacement": "claude-sonnet-4-6",
       "api_string": "claude-sonnet-4-20250514",
-      "notes": "RETIRED June 15, 2026 on Anthropic-operated platforms (deprecated April 14, 2026); pricing page notes still available on Bedrock and Google Cloud. Recommended replacement claude-sonnet-4-6. API ID claude-sonnet-4-20250514. Pricing $3 in / $15 out; 5m cache $3.75, 1h cache $6, cache hits $0.30/MTok; Batch $1.50/$7.50. Snapshot 20250514 implies May 14, 2025 release. Context window and max output not in current overview tables -> null (not corroborated on current pages).",
+      "notes": "RETIRED June 15, 2026 on Anthropic-operated platforms (deprecated April 14, 2026); the pricing page states it is still served on Bedrock and Google Cloud. Recommended replacement claude-sonnet-4-6. API ID claude-sonnet-4-20250514. PRICE CONFIRMED FIRST-PARTY 2026-07-29 against platform.claude.com/docs/en/about-claude/pricing.md, whose model-pricing table retains retired models with their rates and labels this row '(retired, except on Bedrock and Google Cloud)': $3 in / $15 out, 5m cache write $3.75, 1h cache write $6, cache hits & refreshes $0.30/MTok — unchanged to the cent. Batch $1.50/$7.50. Snapshot 20250514 implies May 14, 2025 release. Separate open item, NOT about price: context_window and max_output_tokens are absent from current official tables and are therefore left null.",
       "source_url": "https://platform.claude.com/docs/en/about-claude/model-deprecations",
       "open_weight": false,
       "embedding_dimensions": null,
