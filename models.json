@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-02",
+  "updated": "2026-08-03",
   "source": "Compiled from official provider documentation; flagship pricing adversarially verified.",
   "models": [
     {
@@ -1901,7 +1901,7 @@
       "retires_on": null,
       "replacement": null,
       "api_string": "grok-4.20-multi-agent-0309",
-      "notes": "Marked Beta on the official model page; designed for multi-agent orchestration. Aliases include grok-4.20-multi-agent, grok-4.20-multi-agent-latest. Modality 'text, image -> text'. Lower rate limits than the standard 4.20 SKUs (9 req/s, 2.5M tokens/min vs 37 req/s, 10M tokens/min). Pricing and cached input ($0.20/M) confirmed on official model page. Official docs list a 1M context window; one third-party source claims 2M but this is NOT corroborated by docs.x.ai, so 1M is used.",
+      "notes": "Marked Beta on the official model page; designed for multi-agent orchestration. Aliases include grok-4.20-multi-agent, grok-4.20-multi-agent-latest. Modality 'text, image -> text'. Lower rate limits than the standard 4.20 SKUs (9 req/s, 2.5M tokens/min vs 37 req/s, 10M tokens/min). PRICE: $1.25 in / $2.50 out / $0.20 cached per 1M, re-read and confirmed first-party at docs.x.ai/docs/models on 2026-08-03 (the <200K-token tier; xAI doubles every rate to $2.50/$5.00/$0.40 above 200K input tokens, which this schema has no column for). CONTEXT: docs.x.ai states 1M and that is what we carry; a third-party claim of 2M appears on no xAI surface we have read, so it is not used.",
       "source_url": "https://docs.x.ai/developers/models/grok-4.20-multi-agent-0309",
       "open_weight": false,
       "embedding_dimensions": null,
@@ -1928,7 +1928,7 @@
       "retires_on": null,
       "replacement": null,
       "api_string": "grok-build-0.1",
-      "notes": "Coding-focused model. Aliases: grok-code-fast-1, grok-code-fast, grok-code-fast-1-0825 (the retired grok-code-fast-1 slug now redirects here). Modality 'text, image -> text'. 256k context window. Pricing $1.00/$2.00 per M with $0.20/M cached input, confirmed on official model page. Max output tokens, knowledge cutoff and release date not published on docs; a third-party source cites a 2026-05-29 launch (uncorroborated by official docs).",
+      "notes": "Coding-focused model. Aliases: grok-code-fast-1, grok-code-fast, grok-code-fast-1-0825 (the retired grok-code-fast-1 slug now redirects here). Modality 'text, image -> text'. PRICE: $1.00 in / $2.00 out / $0.20 cached per 1M, re-read and confirmed first-party at docs.x.ai/docs/models on 2026-08-03 (the <200K-token tier; above 200K input tokens xAI charges $2.00/$4.00/$0.40, which this schema has no column for). CONTEXT: 256K, stated on the same table. RELEASE DATE: xAI publishes none on its models page or the per-model page, so released stays null; a third-party 2026-05-29 launch date exists but appears on no xAI surface.",
       "source_url": "https://docs.x.ai/developers/models/grok-build-0.1",
       "open_weight": false,
       "embedding_dimensions": null,
