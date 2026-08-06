@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-05",
+  "updated": "2026-08-06",
   "source": "Compiled from official provider documentation; flagship pricing adversarially verified.",
   "models": [
     {
@@ -195,7 +195,7 @@
       "id": "claude-opus-4-1",
       "name": "Claude Opus 4.1",
       "provider": "Anthropic",
-      "status": "deprecated",
+      "status": "retired",
       "modality": [
         "text",
         "image",
@@ -212,7 +212,7 @@
       "retires_on": "2026-08-05",
       "replacement": "claude-opus-4-8",
       "api_string": "claude-opus-4-1-20250805",
-      "notes": "DEPRECATED June 5, 2026; RETIRES August 5, 2026. Recommended replacement claude-opus-4-8. API ID claude-opus-4-1-20250805 (alias claude-opus-4-1). Extended thinking: Yes; adaptive thinking: No. 200k context, max output 32k. Pricing $15 in / $75 out; 5m cache $18.75, 1h cache $30, cache hits $1.50/MTok. Batch $7.50/$37.50. Reliable knowledge cutoff Jan 2025; training data cutoff Mar 2025. Snapshot date 20250805 implies an Aug 5, 2025 release.",
+      "notes": "RETIRED August 5, 2026 — Anthropic's deprecations table states Current state = Retired (read 2026-08-06); the endpoint no longer serves requests. Deprecated June 5, 2026. Recommended replacement claude-opus-4-8. API ID claude-opus-4-1-20250805 (alias claude-opus-4-1). Extended thinking: Yes; adaptive thinking: No. 200k context, max output 32k. Pricing $15 in / $75 out; 5m cache $18.75, 1h cache $30, cache hits $1.50/MTok. Batch $7.50/$37.50. Reliable knowledge cutoff Jan 2025; training data cutoff Mar 2025. Snapshot date 20250805 implies an Aug 5, 2025 release.",
       "source_url": "https://platform.claude.com/docs/en/about-claude/model-deprecations",
       "open_weight": false,
       "embedding_dimensions": null,
