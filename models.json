@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-11",
+  "updated": "2026-08-12",
   "source": "Compiled from official provider documentation; flagship pricing adversarially verified.",
   "models": [
     {
@@ -24,7 +24,7 @@
       "replacement": null,
       "api_string": "claude-fable-5",
       "notes": "Anthropic's most capable widely released model. GA on Claude API, Claude Platform on AWS, Amazon Bedrock, Google Cloud, and Microsoft Foundry beginning June 9, 2026. Adaptive thinking always on; no extended thinking. 5m cache write $12.50/MTok, 1h cache write $20/MTok (cached_input field here = Cache Hits & Refreshes $1/MTok). Batch: $5 in / $25 out per MTok. 1M context at standard pricing. Uses the Opus 4.7-generation tokenizer (~30-35% more tokens for the same text vs pre-4.7 models). Dateless model ID is a pinned snapshot. Knowledge cutoff not published on overview page (null).",
-      "source_url": "https://platform.claude.com/docs/en/docs/about-claude/models/overview",
+      "source_url": "https://platform.claude.com/docs/en/about-claude/models/overview",
       "open_weight": false,
       "embedding_dimensions": null,
       "price_per_1k_searches": null
@@ -51,7 +51,7 @@
       "replacement": null,
       "api_string": "claude-mythos-5",
       "notes": "Limited availability (not GA) via Project Glasswing to approved customers, beginning June 9, 2026. Successor to Claude Mythos Preview. Adaptive thinking always on; no extended thinking. Pricing identical to Fable 5: $10 in / $50 out; 5m cache $12.50, 1h cache $20, cache hits $1/MTok; Batch $5/$25. 1M context at standard pricing. Status set to 'preview' to reflect limited/invite-only availability. Knowledge cutoff not published (null).",
-      "source_url": "https://platform.claude.com/docs/en/docs/about-claude/models/overview",
+      "source_url": "https://platform.claude.com/docs/en/about-claude/models/overview",
       "open_weight": false,
       "embedding_dimensions": null,
       "price_per_1k_searches": null
@@ -105,7 +105,7 @@
       "replacement": null,
       "api_string": "claude-opus-4-8",
       "notes": "Most capable Opus-tier model (complex reasoning, long-horizon agentic coding). API ID == alias 'claude-opus-4-8' (dateless pinned snapshot). Adaptive thinking; no extended thinking. effort defaults to 'high'. 5m cache $6.25/MTok, 1h cache $10/MTok, cache hits $0.50/MTok. Batch: $2.50 in / $12.50 out. 1M context at standard pricing; 200k on Microsoft Foundry. Supports up to 300k output via Batch API beta header. Fast mode (preview): $10 in / $50 out per MTok. Reliable knowledge cutoff Jan 2026; training data cutoff Jan 2026. Tentative retirement not sooner than May 28, 2027. Explicit release da",
-      "source_url": "https://platform.claude.com/docs/en/docs/about-claude/models/overview",
+      "source_url": "https://platform.claude.com/docs/en/about-claude/models/overview",
       "open_weight": false,
       "embedding_dimensions": null,
       "price_per_1k_searches": null
@@ -132,7 +132,7 @@
       "replacement": null,
       "api_string": "claude-opus-4-7",
       "notes": "Listed under 'Legacy models' on overview but Active in deprecations table. Dateless pinned snapshot ID == alias. Adaptive thinking; no extended thinking. Introduced the new tokenizer (~30-35% more tokens for same text). temperature/top_p/top_k deprecated (400 error on non-default values) on Opus 4.7 and later. 5m cache $6.25, 1h cache $10, cache hits $0.50/MTok. Batch $2.50/$12.50. 1M context standard pricing. Fast mode (preview): $30 in / $150 out per MTok. Reliable knowledge cutoff Jan 2026; training cutoff Jan 2026. Tentative retirement not sooner than April 16, 2027. Status 'ga' per Active",
-      "source_url": "https://platform.claude.com/docs/en/docs/about-claude/models/overview",
+      "source_url": "https://platform.claude.com/docs/en/about-claude/models/overview",
       "open_weight": false,
       "embedding_dimensions": null,
       "price_per_1k_searches": null
@@ -159,7 +159,7 @@
       "replacement": null,
       "api_string": "claude-opus-4-6",
       "notes": "Listed under 'Legacy models' on overview but Active in deprecations table. Dateless pinned snapshot ID == alias. Extended thinking: Yes; adaptive thinking: Yes. 5m cache $6.25, 1h cache $10, cache hits $0.50/MTok. Batch $2.50/$12.50. 1M context standard pricing. Fast mode (preview): $30 in / $150 out per MTok. Reliable knowledge cutoff May 2025; training data cutoff Aug 2025. Tentative retirement not sooner than February 5, 2027. Status 'ga' per Active state. Release date not explicitly published (null).",
-      "source_url": "https://platform.claude.com/docs/en/docs/about-claude/models/overview",
+      "source_url": "https://platform.claude.com/docs/en/about-claude/models/overview",
       "open_weight": false,
       "embedding_dimensions": null,
       "price_per_1k_searches": null
@@ -186,7 +186,7 @@
       "replacement": null,
       "api_string": "claude-opus-4-5-20251101",
       "notes": "API ID claude-opus-4-5-20251101 (alias claude-opus-4-5). Listed under 'Legacy models' on overview but Active in deprecations table. Extended thinking: Yes; adaptive thinking: No. 200k context (not 1M). Max output 64k. 5m cache $6.25, 1h cache $10, cache hits $0.50/MTok. Batch $2.50/$12.50. Reliable knowledge cutoff May 2025; training data cutoff Aug 2025. Snapshot date 20251101 implies a Nov 2025 release. Tentative retirement not sooner than November 24, 2026.",
-      "source_url": "https://platform.claude.com/docs/en/docs/about-claude/models/overview",
+      "source_url": "https://platform.claude.com/docs/en/about-claude/models/overview",
       "open_weight": false,
       "embedding_dimensions": null,
       "price_per_1k_searches": null
@@ -267,7 +267,7 @@
       "replacement": null,
       "api_string": "claude-sonnet-5",
       "notes": "Best combination of speed and intelligence; Anthropic's most agentic Sonnet, performance close to Opus 4.8 at lower cost. Dateless pinned snapshot ID == alias claude-sonnet-5. Extended thinking: No; adaptive thinking: Yes (effort defaults to 'high' on the Claude API and Claude Code). 1M context at standard pricing; max output 128k (300k via Batch API beta header output-300k-2026-03-24). Prices shown are STANDARD ($3 in / $15 out, 5m cache $3.75, 1h cache $6, cache hit $0.30, Batch $1.50/$7.50). INTRODUCTORY pricing of $2 in / $10 out per MTok is in effect through August 31, 2026 (5m cache $2.50, 1h cache $4, cache hit $0.20, Batch $1/$5), reverting to standard on September 1, 2026 — WATCH: if standard is not yet in effect, current live cost is the intro rate. Uses the newer tokenizer (~30% more tokens for the same text). Reliable knowledge cutoff Jan 2026; training data cutoff Jan 2026. Supersedes Claude Sonnet 4.6 (now a legacy model). Released 2026-06-30 (system card date).",
-      "source_url": "https://platform.claude.com/docs/en/docs/about-claude/models/overview",
+      "source_url": "https://platform.claude.com/docs/en/about-claude/models/overview",
       "open_weight": false,
       "embedding_dimensions": null,
       "price_per_1k_searches": null
@@ -294,7 +294,7 @@
       "replacement": null,
       "api_string": "claude-sonnet-4-6",
       "notes": "Best combination of speed and intelligence. Dateless pinned snapshot ID == alias claude-sonnet-4-6. Extended thinking: Yes; adaptive thinking: Yes. 1M context, max output 128k (300k via Batch API beta header). 5m cache $3.75, 1h cache $6, cache hits $0.30/MTok. Batch $1.50/$7.50. Reliable knowledge cutoff Aug 2025; training data cutoff Jan 2026. Tentative retirement not sooner than February 17, 2027. Release date not explicitly published (null). Now a LEGACY model (still generally available, not deprecated) — superseded by Claude Sonnet 5 as of 2026-06-30; consider migrating for improved performance.",
-      "source_url": "https://platform.claude.com/docs/en/docs/about-claude/models/overview",
+      "source_url": "https://platform.claude.com/docs/en/about-claude/models/overview",
       "open_weight": false,
       "embedding_dimensions": null,
       "price_per_1k_searches": null
@@ -321,7 +321,7 @@
       "replacement": null,
       "api_string": "claude-sonnet-4-5-20250929",
       "notes": "API ID claude-sonnet-4-5-20250929 (alias claude-sonnet-4-5). Listed under 'Legacy models' on overview but Active in deprecations table. Extended thinking: Yes; adaptive thinking: No. 200k context, max output 64k. 5m cache $3.75, 1h cache $6, cache hits $0.30/MTok. Batch $1.50/$7.50. Reliable knowledge cutoff Jan 2025; training data cutoff Jul 2025. Snapshot 20250929 implies Sep 29, 2025 release. Tentative retirement not sooner than September 29, 2026.",
-      "source_url": "https://platform.claude.com/docs/en/docs/about-claude/models/overview",
+      "source_url": "https://platform.claude.com/docs/en/about-claude/models/overview",
       "open_weight": false,
       "embedding_dimensions": null,
       "price_per_1k_searches": null
@@ -375,7 +375,7 @@
       "replacement": null,
       "api_string": "claude-haiku-4-5-20251001",
       "notes": "Fastest model with near-frontier intelligence. API ID claude-haiku-4-5-20251001 (alias claude-haiku-4-5). Extended thinking: Yes; adaptive thinking: No. 200k context, max output 64k. 5m cache $1.25, 1h cache $2, cache hits $0.10/MTok. Batch $0.50/$2.50. Reliable knowledge cutoff Feb 2025; training data cutoff Jul 2025. Snapshot 20251001 implies Oct 1, 2025 release. Tentative retirement not sooner than October 15, 2026.",
-      "source_url": "https://platform.claude.com/docs/en/docs/about-claude/models/overview",
+      "source_url": "https://platform.claude.com/docs/en/about-claude/models/overview",
       "open_weight": false,
       "embedding_dimensions": null,
       "price_per_1k_searches": null
@@ -2376,8 +2376,8 @@
       "retires_on": null,
       "replacement": null,
       "api_string": "Llama-3.3-8B-Instruct",
-      "notes": "Listed on the official Meta Llama API models page as a lightweight, ultra-fast text-only variant with 128k context (model ID 'Llama-3.3-8B-Instruct'). NOTE/UNCERTAINTY: there is no corresponding standalone 'Llama-3.3-8B' open-weight checkpoint on Meta's Hugging Face org (the 8B open weight in this generation is Llama-3.1-8B-Instruct); this ID appears specific to the hosted Llama API. Pricing, exact release date, and knowledge cutoff not published on the API models page (null). Not separately priced on OpenRouter/Together under this exact name.",
-      "source_url": "https://llama.developer.meta.com/docs/models",
+      "notes": "Listed on the official Meta Llama API models page as a lightweight, ultra-fast text-only variant with 128k context (model ID 'Llama-3.3-8B-Instruct'). NOTE/UNCERTAINTY: there is no corresponding standalone 'Llama-3.3-8B' open-weight checkpoint on Meta's Hugging Face org (the 8B open weight in this generation is Llama-3.1-8B-Instruct); this ID appears specific to the hosted Llama API. Pricing, exact release date, and knowledge cutoff not published on the API models page (null). Not separately priced on OpenRouter/Together under this exact name. SOURCED ABSENCE, re-resolved 2026-08-12: the hosted API this row came from has been rebranded from the Llama API to the Meta Model API (llama.developer.meta.com now 302s to ai.developer.meta.com), and its models page no longer lists ANY Llama model - the 'Available models' table carries only muse-spark-1.1, muse-spark-1.2 and muse-spark-1.2-contributor. No first-party Meta surface names 'Llama-3.3-8B-Instruct' any more (llama.com/models is a 404). Status left at 'ga' because Meta has DECLARED no deprecation or retirement; delisting is not a declaration and this project records what a provider states, never what it implies.",
+      "source_url": "https://ai.developer.meta.com/docs/models",
       "open_weight": true,
       "embedding_dimensions": null,
       "price_per_1k_searches": null
@@ -2632,7 +2632,7 @@
       "replacement": null,
       "api_string": "mistral-small-2603",
       "notes": "Current Small (v26.03). 'latest' alias mistral-small-latest -> mistral-small-2603. Hybrid instruct/reasoning/coding, 119B params (6.5B active), 256k context. Open-weight (Open v26.03). Pricing $0.15/M in, $0.6/M out (mistral.ai/pricing, 2026-06-28).",
-      "source_url": "https://docs.mistral.ai/models/model-cards/mistral-small-4-0-26-03",
+      "source_url": "https://docs.mistral.ai/models/mistral-small-4-0-26-03",
       "open_weight": true,
       "embedding_dimensions": null,
       "price_per_1k_searches": null
@@ -2658,7 +2658,7 @@
       "replacement": "mistral-small-2603",
       "api_string": "mistral-small-2506",
       "notes": "v25.06. Deprecated 2026-04-30, retirement 2026-07-31, replaced by Mistral Small 4. Pricing no longer listed on current pricing page. Release date added 2026-08-07 from Mistral's typed docs schema (`releaseDate`, https://github.com/mistralai/platform-docs-public/tree/main/src/schema/models/models).",
-      "source_url": "https://docs.mistral.ai/getting-started/models/models_overview/",
+      "source_url": "https://docs.mistral.ai/models",
       "open_weight": true,
       "embedding_dimensions": null,
       "price_per_1k_searches": null
@@ -2710,7 +2710,7 @@
       "replacement": "codestral-2508",
       "api_string": "codestral-2501",
       "notes": "Deprecated 2025-11-06, retired 2025-11-30, replaced by Codestral v25.08. An earlier codestral-2405 alias also exists in the legacy list. Release date added 2026-08-07 from Mistral's typed docs schema (`releaseDate`, https://github.com/mistralai/platform-docs-public/tree/main/src/schema/models/models).",
-      "source_url": "https://docs.mistral.ai/getting-started/models/models_overview/",
+      "source_url": "https://docs.mistral.ai/models",
       "open_weight": true,
       "embedding_dimensions": null,
       "price_per_1k_searches": null
@@ -2788,7 +2788,7 @@
       "replacement": "ministral-14b-2512",
       "api_string": "pixtral-12b-2409",
       "notes": "Open-weight 12B vision model (v24.09). Deprecated 2025-12-02, retired 2025-12-31, replaced by Ministral 3 14B. Past retirement as of 2026-06-28. Release date refined from '2024-09' 2026-08-07 from Mistral's typed docs schema (`releaseDate`, https://github.com/mistralai/platform-docs-public/tree/main/src/schema/models/models).",
-      "source_url": "https://docs.mistral.ai/getting-started/models/models_overview/",
+      "source_url": "https://docs.mistral.ai/models",
       "open_weight": true,
       "embedding_dimensions": null,
       "price_per_1k_searches": null
@@ -2891,7 +2891,7 @@
       "replacement": "ministral-8b-2512",
       "api_string": "ministral-8b-2410",
       "notes": "Original Ministral 8B (v24.10). Deprecated 2025-12-02, retired 2025-12-31, replaced by Ministral 3 8B. Past retirement as of 2026-06-28. Release date refined from '2024-10' 2026-08-07 from Mistral's typed docs schema (`releaseDate`, https://github.com/mistralai/platform-docs-public/tree/main/src/schema/models/models).",
-      "source_url": "https://docs.mistral.ai/getting-started/models/models_overview/",
+      "source_url": "https://docs.mistral.ai/models",
       "open_weight": true,
       "embedding_dimensions": null,
       "price_per_1k_searches": null
@@ -2916,7 +2916,7 @@
       "replacement": "ministral-3b-2512",
       "api_string": "ministral-3b-2410",
       "notes": "Original Ministral 3B (v24.10). Deprecated 2025-12-02, retired 2025-12-31, replaced by Ministral 3 3B. Past retirement as of 2026-06-28. Release date refined from '2024-10' 2026-08-07 from Mistral's typed docs schema (`releaseDate`, https://github.com/mistralai/platform-docs-public/tree/main/src/schema/models/models).",
-      "source_url": "https://docs.mistral.ai/getting-started/models/models_overview/",
+      "source_url": "https://docs.mistral.ai/models",
       "open_weight": false,
       "embedding_dimensions": null,
       "price_per_1k_searches": null
@@ -2941,7 +2941,7 @@
       "replacement": "mistral-medium-latest",
       "api_string": "mistral-large-2411",
       "notes": "v24.11. Deprecated 2026-02-27, retirement 2026-05-31, replaced by Mistral Medium 3.5. Past retirement as of 2026-06-28. Release date refined from '2024-11' 2026-08-07 from Mistral's typed docs schema (`releaseDate`, https://github.com/mistralai/platform-docs-public/tree/main/src/schema/models/models).",
-      "source_url": "https://docs.mistral.ai/getting-started/models/models_overview/",
+      "source_url": "https://docs.mistral.ai/models",
       "open_weight": true,
       "embedding_dimensions": null,
       "price_per_1k_searches": null
@@ -2966,7 +2966,7 @@
       "replacement": "mistral-large-2512",
       "api_string": "mistral-large-2407",
       "notes": "v24.07. Deprecated 2024-11-30, retired 2025-03-30, replacement Mistral Large 3. Release date refined from '2024-07' 2026-08-07 from Mistral's typed docs schema (`releaseDate`, https://github.com/mistralai/platform-docs-public/tree/main/src/schema/models/models).",
-      "source_url": "https://docs.mistral.ai/getting-started/models/models_overview/",
+      "source_url": "https://docs.mistral.ai/models",
       "open_weight": true,
       "embedding_dimensions": null,
       "price_per_1k_searches": null
@@ -2992,7 +2992,7 @@
       "replacement": "mistral-medium-latest",
       "api_string": "mistral-medium-2508",
       "notes": "v25.08. Deprecated 2026-05-22, retirement 2026-08-31, replaced by Mistral Medium 3.5. Still in deprecation window as of 2026-06-28. Release date refined from '2025-08' 2026-08-07 from Mistral's typed docs schema (`releaseDate`, https://github.com/mistralai/platform-docs-public/tree/main/src/schema/models/models).",
-      "source_url": "https://docs.mistral.ai/getting-started/models/models_overview/",
+      "source_url": "https://docs.mistral.ai/models",
       "open_weight": false,
       "embedding_dimensions": null,
       "price_per_1k_searches": null
@@ -3017,7 +3017,7 @@
       "replacement": "ministral-8b-2512",
       "api_string": "open-mistral-nemo-2407",
       "notes": "Open-weight 12B (v24.07, with NVIDIA). Deprecated 2026-05-22, retirement 2026-07-31, replaced by Ministral 3 8B. Still in deprecation window as of 2026-06-28; pricing no longer on current page. Release date refined from '2024-07' 2026-08-07 from Mistral's typed docs schema (`releaseDate`, https://github.com/mistralai/platform-docs-public/tree/main/src/schema/models/models).",
-      "source_url": "https://docs.mistral.ai/getting-started/models/models_overview/",
+      "source_url": "https://docs.mistral.ai/models",
       "open_weight": true,
       "embedding_dimensions": null,
       "price_per_1k_searches": null
@@ -3042,7 +3042,7 @@
       "replacement": "mistral-small-2603",
       "api_string": "open-mixtral-8x22b",
       "notes": "Open-weight MoE. Deprecated 2024-11-30, retired 2025-03-30, replacement Mistral Small 4. Context 64k commonly cited but not confirmed on the legacy table; treat as approximate. Release date refined from '2024-04' 2026-08-07 from Mistral's typed docs schema (`releaseDate`, https://github.com/mistralai/platform-docs-public/tree/main/src/schema/models/models).",
-      "source_url": "https://docs.mistral.ai/getting-started/models/models_overview/",
+      "source_url": "https://docs.mistral.ai/models",
       "open_weight": true,
       "embedding_dimensions": null,
       "price_per_1k_searches": null
@@ -3067,7 +3067,7 @@
       "replacement": "mistral-small-2603",
       "api_string": "open-mixtral-8x7b",
       "notes": "Open-weight MoE. Deprecated 2024-11-30, retired 2025-03-30, replacement Mistral Small 4. Context 32k commonly cited but not confirmed on the legacy table; treat as approximate. Release date refined from '2023-12' 2026-08-07 from Mistral's typed docs schema (`releaseDate`, https://github.com/mistralai/platform-docs-public/tree/main/src/schema/models/models).",
-      "source_url": "https://docs.mistral.ai/getting-started/models/models_overview/",
+      "source_url": "https://docs.mistral.ai/models",
       "open_weight": true,
       "embedding_dimensions": null,
       "price_per_1k_searches": null
@@ -4887,7 +4887,7 @@
       "replacement": "sonar-reasoning-pro",
       "api_string": "sonar-reasoning",
       "notes": "DEPRECATED and removed from the API on 2025-12-15 per the official changelog; calls should migrate to sonar-reasoning-pro (enhanced multi-step reasoning with web search). The current models page (docs.perplexity.ai/getting-started/models) no longer lists it. Historical context window 128K. Historical token pricing was approx $1 input / $5 output per 1M while active, but this is NOT confirmed on a current official page (pricing page no longer lists it), so left null rather than guessed. Confirmed via changelog and the sonar-reasoning-pro model card (which names it as the deprecated predecessor)",
-      "source_url": "https://docs.perplexity.ai/changelog/changelog",
+      "source_url": "https://docs.perplexity.ai/docs/resources/changelog",
       "open_weight": false,
       "embedding_dimensions": null,
       "price_per_1k_searches": null
