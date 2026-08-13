@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-12",
+  "updated": "2026-08-13",
   "source": "Compiled from official provider documentation; flagship pricing adversarially verified.",
   "models": [
     {
@@ -483,6 +483,32 @@
       "api_string": "gpt-5.6-sol",
       "notes": "Current OpenAI flagship — the top 'Sol' tier of the GPT-5.6 family (Sol/Terra/Luna), GA on the API + Codex 2026-07-09 (preview from 2026-06-26). Text+image input, text output, configurable reasoning effort. Priced identically to GPT-5.5 ($5/$0.50/$30) but stronger on coding/knowledge-work/cyber/science per OpenAI. New caching model: explicit cache breakpoints, 30-min min cache life, cache writes billed 1.25x uncached input, reads keep the 90% discount. Standard tier ($5.00/$0.50/$30.00) re-confirmed against the pricing page and the model page 2026-08-08; cache write $6.25/M. Prompts >272K input tokens are billed at 2x input / 1.5x output for the whole request (stated on the model page). Batch ~50%.",
       "source_url": "https://developers.openai.com/api/docs/models/gpt-5.6-sol",
+      "open_weight": false,
+      "embedding_dimensions": null,
+      "price_per_1k_searches": null
+    },
+    {
+      "id": "gpt-5-6-cyber",
+      "name": "GPT-5.6 Cyber",
+      "provider": "OpenAI",
+      "status": "ga",
+      "modality": [
+        "text",
+        "image"
+      ],
+      "context_window": 400000,
+      "max_output_tokens": 128000,
+      "price_input_per_mtok": 12.5,
+      "price_output_per_mtok": 75,
+      "price_cached_input_per_mtok": 1.25,
+      "knowledge_cutoff": "2026-02-16",
+      "released": null,
+      "deprecated_on": null,
+      "retires_on": null,
+      "replacement": null,
+      "api_string": "gpt-5.6-cyber",
+      "notes": "Purpose-trained cybersecurity model in the GPT-5.6 family, for approved defenders doing authorized vulnerability research, exploit validation and security testing. ACCESS IS GATED: OpenAI states it 'requires separate approval and provisioning' via the Daybreak program, so the published rate is not self-serve. Priced in its own 'Cyber models' table on the pricing page (2.50 / .25 cached / 5.00 per 1M, cache writes 5.625) - a table check-price-drift.mjs does not read, because that script anchors on the Standard-tier tables. 400K context, 128K max output, Feb 16 2026 cutoff, text+image in / text out, reasoning tokens supported. The pricing page's long-context columns are '-' for this model, i.e. no long-context tier is published, unlike Sol. 'daybreak-red-latest' is an alias currently pointing here (and 'daybreak-blue-latest' to gpt-5.6-sol); the aliases are stated to re-point as new Daybreak models ship, with pricing following the underlying model. No release date published (null).",
+      "source_url": "https://developers.openai.com/api/docs/models/gpt-5.6-cyber",
       "open_weight": false,
       "embedding_dimensions": null,
       "price_per_1k_searches": null
