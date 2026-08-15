@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-14",
+  "updated": "2026-08-15",
   "source": "Compiled from official provider documentation; flagship pricing adversarially verified.",
   "models": [
     {
@@ -1343,6 +1343,35 @@
       "api_string": "gemini-3.1-pro-preview",
       "notes": "Output modality: text only. Tiered pricing by prompt size: input $2.00 (<=200k tokens) / $4.00 (>200k); output $12.00 (<=200k) / $18.00 (>200k); cached input $0.20 (<=200k) / $0.40 (>200k) per 1M tokens. The values shown here are the <=200k tier. gemini-3-pro-preview alias now points to this model (the original gemini-3-pro-preview was shut down 2026-03-09). Preview/not-stable; may change. Release date refined from month precision (2026-02) to the exact day 2026-08-05, read first-party from the Release date column of Google's deprecations table, which states February 19, 2026. Source pages also include ai.google.dev/gemini-api/docs/pricing and /deprecations.",
       "source_url": "https://ai.google.dev/gemini-api/docs/models/gemini-3.1-pro-preview",
+      "open_weight": false,
+      "embedding_dimensions": null,
+      "price_per_1k_searches": null
+    },
+    {
+      "id": "gemini-3-7-flash",
+      "name": "Gemini 3.7 Flash",
+      "provider": "Google",
+      "status": "ga",
+      "modality": [
+        "text",
+        "image",
+        "video",
+        "audio",
+        "pdf"
+      ],
+      "context_window": 1048576,
+      "max_output_tokens": 65536,
+      "price_input_per_mtok": 0.75,
+      "price_output_per_mtok": 3.75,
+      "price_cached_input_per_mtok": 0.075,
+      "knowledge_cutoff": null,
+      "released": "2026-08-13",
+      "deprecated_on": null,
+      "retires_on": null,
+      "replacement": null,
+      "api_string": "gemini-3.7-flash",
+      "notes": "GA/stable ('Stable: gemini-3.7-flash' on the model page), described by Google as 'our most capable Flash model' on the pricing page and 'our most intelligent workhorse model yet for coding and agents' in the August 13, 2026 release note. THE PRICE FIELDS CARRY THE COLUMN IN FORCE THROUGH 2026-12-31, not the 2027 one — Google prices this model on a two-date schedule and calls it an introductory price in as many words ('available at an introductory price through December 31, 2026'): paid-tier Standard is $0.75 in / $3.75 out per 1M with context caching $0.075/1M through December 31, 2026, doubling to $1.50 / $7.50 / $0.15 starting January 1, 2027. A dated ROADMAP ticket moves these fields on the cutover. Other published tiers, none of which fit the per-MTok fields, on the same two dates: Batch and Flex $0.375 in / $1.875 out (caching $0.0375) then $0.75 / $3.75 (caching $0.075); Priority $1.35 / $6.75 (caching $0.135) then $2.70 / $13.50 (caching $0.27). The per-1M-tokens-per-hour cache STORAGE fee this schema has no field for follows the same schedule: $0.50 through 2026-12-31, $1.00 from 2027-01-01. Grounding with Google Search or Maps: 5,000 requests/month free shared across all Gemini 3.x models, then $14 per 1,000. Spec table gives 1,048,576 input / 65,536 output tokens, inputs text/image/video/audio/PDF and outputs text; thinking is supported at low, medium and high (Google notes 'minimal' returns an error). Released 2026-08-13 per the API release notes; the deprecations table carries it more coarsely as 'August 2026' and announces no shutdown date. Google publishes no knowledge cutoff on any of the three surfaces, so that stays null. Priced identically to gemini-3.6-flash on all three axes during the introductory window.",
+      "source_url": "https://ai.google.dev/gemini-api/docs/models/gemini-3.7-flash",
       "open_weight": false,
       "embedding_dimensions": null,
       "price_per_1k_searches": null
