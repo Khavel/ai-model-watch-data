@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-17",
+  "updated": "2026-08-18",
   "source": "Compiled from official provider documentation; flagship pricing adversarially verified.",
   "models": [
     {
@@ -912,7 +912,7 @@
       "modality": [
         "text"
       ],
-      "context_window": 8191,
+      "context_window": 8192,
       "max_output_tokens": null,
       "price_input_per_mtok": 0.13,
       "price_output_per_mtok": null,
@@ -923,7 +923,7 @@
       "retires_on": null,
       "replacement": null,
       "api_string": "text-embedding-3-large",
-      "notes": "Most capable embedding model. Output up to 3072 dimensions (reducible via the dimensions param). Price is first-party: $0.13 per 1M input tokens, confirmed unchanged 2026-08-08 against developers.openai.com/api/docs/pricing (Standard tier, embeddings table). Embeddings carry no output-token billing. Max input 8191 tokens is stated in OpenAI's new-embedding-models announcement rather than on the model spec page — a different first-party surface, not a price caveat.",
+      "notes": "Most capable embedding model. Output up to 3072 dimensions (reducible via the dimensions param). Price is first-party: $0.13 per 1M input tokens, confirmed unchanged 2026-08-08 against developers.openai.com/api/docs/pricing (Standard tier, embeddings table). Embeddings carry no output-token billing. Max input tokens CORRECTED 8191 -> 8192 on 2026-08-18: the model spec page states no limit at all, and the live API reference (developers.openai.com/api/docs/api-reference/embeddings/create) states it as a constraint on the input parameter -- \"the max input tokens for the model (8192 tokens for all embedding models)\". 8191 was the figure OpenAI's 2024 new-embedding-models announcement carried; the reference carries the field as data and is current, so it wins on the precision ranking. Not an upstream change and therefore no changelog entry.",
       "source_url": "https://developers.openai.com/api/docs/models/text-embedding-3-large",
       "open_weight": false,
       "embedding_dimensions": 3072,
@@ -937,7 +937,7 @@
       "modality": [
         "text"
       ],
-      "context_window": 8191,
+      "context_window": 8192,
       "max_output_tokens": null,
       "price_input_per_mtok": 0.02,
       "price_output_per_mtok": null,
@@ -948,7 +948,7 @@
       "retires_on": null,
       "replacement": null,
       "api_string": "text-embedding-3-small",
-      "notes": "Cost-efficient embedding model, default 1536 dimensions. Price is first-party: $0.02 per 1M input tokens, confirmed unchanged 2026-08-08 against developers.openai.com/api/docs/pricing (Standard tier, embeddings table); no output-token billing. Max input 8191 tokens is stated in OpenAI's new-embedding-models announcement rather than on the model spec page — a different first-party surface, not a price caveat.",
+      "notes": "Cost-efficient embedding model, default 1536 dimensions. Price is first-party: $0.02 per 1M input tokens, confirmed unchanged 2026-08-08 against developers.openai.com/api/docs/pricing (Standard tier, embeddings table); no output-token billing. Max input tokens CORRECTED 8191 -> 8192 on 2026-08-18: the model spec page states no limit at all, and the live API reference (developers.openai.com/api/docs/api-reference/embeddings/create) states it as a constraint on the input parameter -- \"the max input tokens for the model (8192 tokens for all embedding models)\". 8191 was the figure OpenAI's 2024 new-embedding-models announcement carried; the reference carries the field as data and is current, so it wins on the precision ranking. Not an upstream change and therefore no changelog entry.",
       "source_url": "https://developers.openai.com/api/docs/models/text-embedding-3-small",
       "open_weight": false,
       "embedding_dimensions": 1536,
