@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-16",
+  "updated": "2026-11-18",
   "source": "Compiled from official provider documentation; flagship pricing adversarially verified.",
   "models": [
     {
@@ -673,6 +673,58 @@
       "api_string": "claude-3-haiku-20240307",
       "notes": "RETIRED April 20, 2026 (deprecated February 19, 2026). Recommended replacement claude-haiku-4-5-20251001. API ID claude-3-haiku-20240307. Not listed in the current pricing table -> per-model prices null. Snapshot 20240307 implies Mar 7, 2024 release.",
       "source_url": "https://platform.claude.com/docs/en/about-claude/model-deprecations",
+      "open_weight": false,
+      "embedding_dimensions": null,
+      "price_per_1k_searches": null
+    },
+    {
+      "id": "gpt-6-2-astra",
+      "name": "GPT-6.2 Astra",
+      "provider": "OpenAI",
+      "status": "ga",
+      "modality": [
+        "text",
+        "image"
+      ],
+      "context_window": 1050000,
+      "max_output_tokens": 128000,
+      "price_input_per_mtok": 8,
+      "price_output_per_mtok": 40,
+      "price_cached_input_per_mtok": 0.4,
+      "knowledge_cutoff": "2026-05-18",
+      "released": "2026-11-17",
+      "deprecated_on": null,
+      "retires_on": null,
+      "replacement": null,
+      "api_string": "gpt-6.2-astra",
+      "notes": "Released 2026-11-17 per OpenAI's own API changelog (\"Use GPT-6.2 Astra for demanding reasoning and coding tasks\"); the model page calls it \"Our most capable model for your hardest projects\". May 18 2026 knowledge cutoff. Text+image input, text output (audio and video unsupported); 1,050,000-token context (maximum input 922,000), 128,000 max output. Reasoning tokens supported; the API rejects reasoning effort 'none'. Tool calling requires the Responses API; Chat Completions is supported. Standard tier per 1M as stated on the model page and in the pricing page's Standard table: $8.00 in / $0.40 cached in / $10.00 cache write / $40.00 out. The cache write rate is for 30-minute retention; a 12-hour cache write is priced separately on the model page. For requests with more than 272K input tokens, input and cache rates double and output is 1.5x for the full request; the price fields carry the <=272K band. Batch is 50% of Standard and Fast mode is 2x Standard. Ultrafast is a dated SCHEDULE, not one multiplier: 3x Standard through 2027-02-28 and 6x Standard from 2027-03-01 (Pacific time) - no price field here carries Ultrafast, so the cutover does not move any field. Discounted background completion windows (Responses API public beta, announced 2026-11-17) bill token rates 30% below Standard for the 2-hour window and 40% below for the 8-hour window. Snapshot list on the model page is the bare alias only; no dated snapshot is published. STATUS: recorded as ga on the same reading as GPT-6.1 Sol - the changelog entry is tagged Feature with v1/responses and v1/chat/completions, the model page carries no access or rollout qualifier, and OpenAI does not use the words \"generally available\". Lifecycle fields are null: OpenAI announces no deprecation alongside this release and its deprecations page names neither GPT-6.2 model. Found 2026-11-18 by check-pricing-prose (new GPT-6.2 lines on the pricing page) and check-price-drift (\"priced by OpenAI, not in our catalog\" 11 -> 13); the one-day delay is ours. Every Standard rate is below GPT-6 Astra's (see that row); OpenAI does not deprecate GPT-6 Astra with this release.",
+      "source_url": "https://developers.openai.com/api/docs/models/gpt-6.2-astra",
+      "open_weight": false,
+      "embedding_dimensions": null,
+      "price_per_1k_searches": null
+    },
+    {
+      "id": "gpt-6-2-sol",
+      "name": "GPT-6.2 Sol",
+      "provider": "OpenAI",
+      "status": "ga",
+      "modality": [
+        "text",
+        "image"
+      ],
+      "context_window": 1050000,
+      "max_output_tokens": 128000,
+      "price_input_per_mtok": 2,
+      "price_output_per_mtok": 10,
+      "price_cached_input_per_mtok": 0.1,
+      "knowledge_cutoff": "2026-06-01",
+      "released": "2026-11-17",
+      "deprecated_on": null,
+      "retires_on": null,
+      "replacement": null,
+      "api_string": "gpt-6.2-sol",
+      "notes": "Released 2026-11-17 per OpenAI's own API changelog (\"GPT-6.2 Sol for everyday coding and agent workflows\"); the model page calls it \"Our go-to model for everyday work\". Jun 01 2026 knowledge cutoff. Text+image input, text output (audio and video unsupported); 1,050,000-token context (maximum input 922,000), 128,000 max output. Reasoning tokens supported; the API rejects reasoning effort 'none'. Tool calling requires the Responses API; Chat Completions is supported. Standard tier per 1M as stated on the model page and in the pricing page's Standard table: $2.00 in / $0.10 cached in / $2.50 cache write / $10.00 out. The cache write rate is for 30-minute retention; a 12-hour cache write is priced separately on the model page. For requests with more than 272K input tokens, input and cache rates double and output is 1.5x for the full request; the price fields carry the <=272K band. Batch is 50% of Standard and Fast mode is 2x Standard. Ultrafast is a dated SCHEDULE, not one multiplier: 3x Standard through 2027-02-28 and 6x Standard from 2027-03-01 (Pacific time) - no price field here carries Ultrafast, so the cutover does not move any field. Discounted background completion windows (Responses API public beta, announced 2026-11-17) bill token rates 30% below Standard for the 2-hour window and 40% below for the 8-hour window. Snapshot list on the model page is the bare alias only; no dated snapshot is published. STATUS: recorded as ga on the same reading as GPT-6.1 Sol - the changelog entry is tagged Feature with v1/responses and v1/chat/completions, the model page carries no access or rollout qualifier, and OpenAI does not use the words \"generally available\". Lifecycle fields are null: OpenAI announces no deprecation alongside this release and its deprecations page names neither GPT-6.2 model. Found 2026-11-18 by check-pricing-prose (new GPT-6.2 lines on the pricing page) and check-price-drift (\"priced by OpenAI, not in our catalog\" 11 -> 13); the one-day delay is ours. These Standard rates are identical to GPT-6.1 Sol's; OpenAI does not deprecate GPT-6.1 Sol with this release.",
+      "source_url": "https://developers.openai.com/api/docs/models/gpt-6.2-sol",
       "open_weight": false,
       "embedding_dimensions": null,
       "price_per_1k_searches": null
