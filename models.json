@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-18",
+  "updated": "2026-11-19",
   "source": "Compiled from official provider documentation; flagship pricing adversarially verified.",
   "models": [
     {
@@ -2131,6 +2131,35 @@
       "api_string": "gemini-4-carbon",
       "notes": "GA/stable ('Stable: gemini-4-carbon' on the model page; the November 10, 2026 release note is headed 'Gemini 4 Carbon (gemini-4-carbon) generally available (GA)'), described by Google as 'our most capable reasoning model, built for complex software engineering, mathematical and scientific problem solving, high factual accuracy, autonomous multi-step agents, and long decode up to 1M tokens'. THE PRICE FIELDS CARRY THE INTRODUCTORY COLUMN IN FORCE THROUGH 2026-11-30, not the later one - Google's pricing page publishes a two-date schedule: paid-tier Standard is $2.00 in / $10.00 out per 1M (output including thinking tokens) with context caching $0.10/1M through November 30, 2026, doubling to $4.00 / $20.00 / $0.20 starting December 1, 2026; the release note and the 'What's new in Gemini 4 Carbon' page both call the first column introductory pricing. A midnight boundary, so there is no intra-day error window, but the fields must be re-read on 2026-12-01: since Google moved its docs to aistudio.google.com on 2026-11-03, scripts/check-google-prices.mjs parses no rate on that page and will NOT flag this cutover on its own. Other published tiers, none of which fit the per-MTok fields, on the same two dates: Batch and Flex $1.00 in / $5.00 out (caching $0.05) then $2.00 / $10.00 (caching $0.10); Priority $3.60 / $18.00 (caching $0.18) then $7.20 / $36.00 (caching $0.36). The schedule is identical, cell for cell, to gemini-4-argon's; the What's-new page says Carbon is offered 'at the same per-token price' as Argon. Caching is implicit only - Google states explicit caching is not supported, so no cache storage fee is published. Grounding with Google Search or Maps: 5,000 requests/month free shared across all Gemini 3 and newer models, then $14 per 1,000. Not available on the Free tier (every free-tier cell reads 'Not available'). Spec table gives a 1,048,576-token context window that Google labels a 'unified input and output token limit', and max output 65,536 (default synchronous) / up to 1,048,576 with long decode - max_output_tokens carries the default synchronous figure. Inputs text/image/video/audio/PDF, output text; thinking supported at low, medium and high (default medium per the What's-new page); computer use, code execution, file search, function calling and structured outputs supported; Live API, audio generation and image generation not supported. Released 2026-11-10 per the API release notes and the 'Gemini 4 models' table of the deprecations page, which lists it with 'No shutdown date announced' and no replacement; the model page's 'Latest update' field carries the date more coarsely as 'November 2026'. Google publishes no knowledge cutoff on the model page, pricing page, What's-new page or release note, so that stays null. Google names no model that Carbon replaces. First read 2026-11-11.",
       "source_url": "https://aistudio.google.com/docs/models/gemini-4-carbon",
+      "open_weight": false,
+      "embedding_dimensions": null,
+      "price_per_1k_searches": null
+    },
+    {
+      "id": "gemini-4-neon",
+      "name": "Gemini 4 Neon",
+      "provider": "Google",
+      "status": "ga",
+      "modality": [
+        "text",
+        "image",
+        "video",
+        "audio",
+        "pdf"
+      ],
+      "context_window": 1048576,
+      "max_output_tokens": 65536,
+      "price_input_per_mtok": 3,
+      "price_output_per_mtok": 15,
+      "price_cached_input_per_mtok": 0.15,
+      "knowledge_cutoff": null,
+      "released": "2026-11-18",
+      "deprecated_on": null,
+      "retires_on": null,
+      "replacement": null,
+      "api_string": "gemini-4-neon",
+      "notes": "GA/stable ('Stable: gemini-4-neon' on the model page; the November 18, 2026 release note is headed 'Gemini 4 Neon (gemini-4-neon) generally available (GA)'), described by Google as bringing 'frontier-level intelligence with fast end-to-end task completion across complex software engineering, knowledge work, and science workflows'; the What's-new page places it between gemini-4-hydrogen and gemini-4-carbon. Single-column pricing - the pricing page publishes no dated schedule for this model and the What's-new page calls it 'flat pricing across the full 1M context window': paid-tier Standard is $3.00 in / $15.00 out per 1M (output including thinking tokens) with implicit context caching at $0.15/1M, which the What's-new page calls a 95% discount. Other published tiers, none of which fit the per-MTok fields: Batch and Flex $1.50 in / $7.50 out (caching $0.075); Priority $5.40 / $27.00 (caching $0.27). NOT available on the Free tier (every free-tier cell reads 'Not available'; the pricing callout and What's-new page both say paid tier only). Caching is implicit only - Google states explicit caching is not supported, so no cache storage fee is published. Grounding with Google Search or Maps: 5,000 requests/month free shared across all Gemini 3 and newer models, then $14 per 1,000. Spec table gives a 1,048,576-token context window that Google labels a 'unified input and output token limit', and max output 65,536 (default synchronous) / up to 1,048,576 with long decode - max_output_tokens carries the default synchronous figure. Inputs text/image/video/audio/PDF, output text; thinking at low, medium, high (default) and xhigh; computer use, code execution, file search, function calling, structured outputs, URL context and grounding supported; Live API, audio generation and image generation not supported. The What's-new page carries a migration checklist 'from Gemini 4 Carbon, Argon, or Hydrogen' and from Gemini 3 - that is guidance, NOT a deprecation: the deprecations page declares no shutdown for any of those, so their rows are unchanged and replacement here stays null. Released 2026-11-18 per the API release notes and the 'Gemini 4 models' table of the deprecations page, which lists it with 'No shutdown date announced' and no replacement; the model page's 'Latest update' field carries the date more coarsely as 'November 2026'. Google publishes no knowledge cutoff on the model page, pricing page, What's-new page or release note, so that stays null. First read 2026-11-19.",
+      "source_url": "https://aistudio.google.com/docs/models/gemini-4-neon",
       "open_weight": false,
       "embedding_dimensions": null,
       "price_per_1k_searches": null
