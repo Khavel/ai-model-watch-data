@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-19",
+  "updated": "2026-11-20",
   "source": "Compiled from official provider documentation; flagship pricing adversarially verified.",
   "models": [
     {
@@ -3028,7 +3028,7 @@
       "retires_on": null,
       "replacement": null,
       "api_string": "grok-build-0.1",
-      "notes": "Coding-focused model. Aliases: grok-code-fast-1, grok-code-fast, grok-code-fast-1-0825 (the retired grok-code-fast-1 slug now redirects here). Modality 'text, image -> text'. PRICE: $1.00 in / $2.00 out / $0.20 cached per 1M, re-read and confirmed first-party at docs.x.ai/docs/models on 2026-08-03 (the <200K-token tier; above 200K input tokens xAI charges $2.00/$4.00/$0.40, which this schema has no column for). CONTEXT: 256K, stated on the same table. RELEASE DATE: xAI publishes none on its models page or the per-model page, so released stays null; a third-party 2026-05-29 launch date exists but appears on no xAI surface.",
+      "notes": "Coding-focused model (xAI release notes: \"trained specifically for agentic coding workflows. Currently in early access.\"). Until 2026-11-19 the models page listed it with aliases grok-code-fast-1, grok-code-fast, grok-code-fast-1-0825 (the retired grok-code-fast-1 slug redirected here). Modality 'text, image -> text'. PRICE: $1.00 in / $2.00 out / $0.20 cached per 1M, re-read and confirmed first-party at docs.x.ai/docs/models on 2026-08-03 (the <200K-token tier; above 200K input tokens xAI charges $2.00/$4.00/$0.40, which this schema has no column for). CONTEXT: 256K, stated on the same table. RELEASE DATE: xAI publishes none on its models page or the per-model page, so released stays null; a third-party 2026-05-29 launch date exists but appears on no xAI surface. SOURCED ABSENCE (read 2026-11-20): grok-build-0.1 is no longer on docs.x.ai/developers/models - its per-model page now redirects to that list, the embedded model records no longer include it, and the alias grok-build-latest is now listed under grok-4.5. xAI declares no retirement or deprecation for it anywhere (release notes last updated November 13, 2026 name only its launch; docs.x.ai/developers/deprecations is 404), so per LEARNINGS #48 the status stays ga and the price fields keep the 2026-08-03 first-party reading, which the current page can no longer confirm.",
       "source_url": "https://docs.x.ai/developers/models/grok-build-0.1",
       "open_weight": false,
       "embedding_dimensions": null,
@@ -7087,6 +7087,34 @@
       "api_string": "gemini-omni-1.2-flash",
       "notes": "Video generation and editing; successor to gemini-omni-1.1-flash, which Google auto-routes here from December 3, 2026. Google's changelog entry of November 5, 2026 announces it generally available, with up to 15-second video generation and conversational editing (3-10s for first and last frame interpolation, 3-10s per-turn video extension up to 30s total), better character and subject consistency across up to 6 reference images, 30% lower video output pricing and doubled paid-tier rate limits. The model page Versions block reads 'Stable: gemini-omni-1.2-flash'; the deprecations table gives release date November 5, 2026 and 'No shutdown date announced'. Paid tier only: the pricing page states 'Not available' on the free tier. Input $1.50 per 1M (labelled text / image / video). Two output rates (including thinking tokens): text $9.00/1M, video $12.00/1M — price_output_per_mtok holds the video rate, the same convention as gemini-omni-1.1-flash. Google bills on total output tokens at 5,792 tokens per second of 720p video, an effective ~$0.07/s (~$0.70 for a 10s clip); it also quotes $0.023/s at 360p (1,931 tokens/s), $0.104/s at 1080p with upsampling (8,688 tokens/s) and $0.209/s at 4K with upsampling (17,376 tokens/s). Limits per the model page: input 131,072 tokens, output 65,536 tokens, output video 3s-15s at 360p/720p/1080p/4K, 24 FPS. Model page lists inputs Text, Image, Video. No context caching rate is published. Read first-party 2026-11-07 from aistudio.google.com/docs (pricing, model page, deprecations, changelog).",
       "source_url": "https://aistudio.google.com/docs/pricing#gemini-omni-1.2-flash",
+      "open_weight": false,
+      "embedding_dimensions": null,
+      "price_per_1k_searches": null
+    },
+    {
+      "id": "genie-4",
+      "name": "Genie 4",
+      "provider": "Google",
+      "status": "ga",
+      "modality": [
+        "text",
+        "image",
+        "video-out",
+        "audio-out"
+      ],
+      "context_window": null,
+      "max_output_tokens": null,
+      "price_input_per_mtok": 1.5,
+      "price_output_per_mtok": 17.5,
+      "price_cached_input_per_mtok": null,
+      "knowledge_cutoff": null,
+      "released": "2026-11-19",
+      "deprecated_on": null,
+      "retires_on": null,
+      "replacement": null,
+      "api_string": "genie-4",
+      "notes": "Real-time interactive world generation on the Interactions API (v1beta): seed a world from a text prompt, a 16:9 reference image, or both, then steer the live 24 fps 16:9 video with synchronized 48 kHz stereo audio using keyboard controls (WASD/arrow keys) and mid-session text events, streamed over WebRTC or WebSockets. Google's changelog entry of November 19, 2026 is headed 'Genie 4 (genie-4) generally available (GA)'; the model page Versions block reads 'Stable: genie-4' and its 'Latest update' field says 'November 2026'; the deprecations page 'Genie models' table gives release date November 19, 2026, 'No shutdown date announced' and no replacement. Paid tier only (every free-tier cell reads 'Not available'). Single-column pricing with no dated schedule: input $1.50 per 1M (text / reference image); two output rates - text $9.00/1M and video $17.50/1M (audio included) - price_output_per_mtok holds the VIDEO rate, the same convention as gemini-omni-1-2-flash. Google bills emitted video output tokens at 240 tokens per frame (5,760 tokens per second at 24 fps), which it states is an effective ~$0.10 per second (~$6.05 per minute). No context caching price; Batch API, Flex and Priority inference are not supported. Session limits per the model page: output video 1280x720 (720p), up to 120 seconds per session, a single 16:9 reference image; serving regions United States, Western Europe and Japan. Google publishes no context-window or output-token limit and no knowledge cutoff, so context_window, max_output_tokens and knowledge_cutoff stay null. For offline fixed-duration clips Google points to gemini-omni-1-2-flash instead (guidance, not a replacement). Read first-party 2026-11-20 from aistudio.google.com/docs (changelog, model page, pricing, deprecations).",
+      "source_url": "https://aistudio.google.com/docs/models/genie-4",
       "open_weight": false,
       "embedding_dimensions": null,
       "price_per_1k_searches": null
