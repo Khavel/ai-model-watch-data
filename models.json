@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-20",
+  "updated": "2026-11-21",
   "source": "Compiled from official provider documentation; flagship pricing adversarially verified.",
   "models": [
     {
@@ -3011,7 +3011,7 @@
       "id": "grok-build-0-1",
       "name": "Grok Build 0.1",
       "provider": "xAI",
-      "status": "ga",
+      "status": "retired",
       "modality": [
         "text-in",
         "image-in",
@@ -3019,17 +3019,17 @@
       ],
       "context_window": 256000,
       "max_output_tokens": null,
-      "price_input_per_mtok": 1,
-      "price_output_per_mtok": 2,
-      "price_cached_input_per_mtok": 0.2,
+      "price_input_per_mtok": null,
+      "price_output_per_mtok": null,
+      "price_cached_input_per_mtok": null,
       "knowledge_cutoff": null,
       "released": null,
       "deprecated_on": null,
-      "retires_on": null,
+      "retires_on": "2026-11-19",
       "replacement": null,
       "api_string": "grok-build-0.1",
-      "notes": "Coding-focused model (xAI release notes: \"trained specifically for agentic coding workflows. Currently in early access.\"). Until 2026-11-19 the models page listed it with aliases grok-code-fast-1, grok-code-fast, grok-code-fast-1-0825 (the retired grok-code-fast-1 slug redirected here). Modality 'text, image -> text'. PRICE: $1.00 in / $2.00 out / $0.20 cached per 1M, re-read and confirmed first-party at docs.x.ai/docs/models on 2026-08-03 (the <200K-token tier; above 200K input tokens xAI charges $2.00/$4.00/$0.40, which this schema has no column for). CONTEXT: 256K, stated on the same table. RELEASE DATE: xAI publishes none on its models page or the per-model page, so released stays null; a third-party 2026-05-29 launch date exists but appears on no xAI surface. SOURCED ABSENCE (read 2026-11-20): grok-build-0.1 is no longer on docs.x.ai/developers/models - its per-model page now redirects to that list, the embedded model records no longer include it, and the alias grok-build-latest is now listed under grok-4.5. xAI declares no retirement or deprecation for it anywhere (release notes last updated November 13, 2026 name only its launch; docs.x.ai/developers/deprecations is 404), so per LEARNINGS #48 the status stays ga and the price fields keep the 2026-08-03 first-party reading, which the current page can no longer confirm.",
-      "source_url": "https://docs.x.ai/developers/models/grok-build-0.1",
+      "notes": "Coding-focused model (xAI release notes: \"trained specifically for agentic coding workflows. Currently in early access.\"). RETIRED 2026-11-19. SIGNAL USED for status 'retired': xAI's own dated, past-tense release-note entry 'grok-build-0.1 end of life' (November 19, docs.x.ai/developers/release-notes#grok-build-01-end-of-life), read first-hand on 2026-11-21, which states that grok-build-0.1 'reached end of life on November 19, 2026 and is no longer served on the API'. xAI published no deprecation date or notice period for it, so deprecated_on stays null, and it names no replacement, so replacement stays null; the alias grok-build-latest was listed under grok-4.5 on docs.x.ai/developers/models when read on 2026-11-20, which is an alias move, not a declared successor. Price fields are null because the model is no longer served, matching the catalog's other retired xAI rows; while it was live it was priced at $1.00 in / $2.00 out / $0.20 cached per 1M (the <200K-token tier, read first-party at docs.x.ai/docs/models on 2026-08-03; above 200K input tokens $2.00/$4.00/$0.40). Until 2026-11-19 the models page listed it with aliases grok-code-fast-1, grok-code-fast, grok-code-fast-1-0825 (the retired grok-code-fast-1 slug redirected here). Modality 'text, image -> text'. CONTEXT: 256K, stated on the same table. RELEASE DATE: xAI published none on its models page or the per-model page, so released stays null; a third-party 2026-05-29 launch date exists but appears on no xAI surface. On 2026-11-20 the row was held at ga as a sourced absence: the model had dropped off docs.x.ai/developers/models (its per-model page redirected to that list) while no xAI surface yet declared a retirement; the end-of-life note above appeared after that read.",
+      "source_url": "https://docs.x.ai/developers/release-notes#grok-build-01-end-of-life",
       "open_weight": false,
       "embedding_dimensions": null,
       "price_per_1k_searches": null
@@ -3455,7 +3455,7 @@
       "retires_on": "2026-05-15",
       "replacement": "grok-build-0.1",
       "api_string": "grok-code-fast-1",
-      "notes": "Retired as a standalone slug on 2026-05-15 12:00 PM PT; redirects to grok-build-0.1. Note grok-code-fast-1 also persists as an ALIAS of grok-build-0.1 on the current model page, so the name still resolves. 256k context window inferred from grok-build-0.1 (same model lineage).",
+      "notes": "Retired as a standalone slug on 2026-05-15 12:00 PM PT and redirected to grok-build-0.1. Until 2026-11-19 grok-code-fast-1 also persisted as an ALIAS of grok-build-0.1 on the model page, so the name still resolved; grok-build-0.1 itself reached end of life on 2026-11-19 (xAI release notes), and xAI does not state where, if anywhere, this alias resolves now. 256k context window inferred from grok-build-0.1 (same model lineage).",
       "source_url": "https://docs.x.ai/developers/migration/may-15-retirement",
       "open_weight": false,
       "embedding_dimensions": null,
