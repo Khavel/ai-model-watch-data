@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-21",
+  "updated": "2026-11-24",
   "source": "Compiled from official provider documentation; flagship pricing adversarially verified.",
   "models": [
     {
@@ -330,7 +330,7 @@
       "id": "claude-opus-4-5",
       "name": "Claude Opus 4.5",
       "provider": "Anthropic",
-      "status": "ga",
+      "status": "deprecated",
       "modality": [
         "text",
         "image",
@@ -343,11 +343,11 @@
       "price_cached_input_per_mtok": 0.5,
       "knowledge_cutoff": "2025-05",
       "released": null,
-      "deprecated_on": null,
-      "retires_on": null,
-      "replacement": null,
+      "deprecated_on": "2026-11-23",
+      "retires_on": "2027-01-22",
+      "replacement": "claude-opus-5-5",
       "api_string": "claude-opus-4-5-20251101",
-      "notes": "API ID claude-opus-4-5-20251101 (alias claude-opus-4-5). Listed under 'Legacy models' on overview but Active in deprecations table. Extended thinking: Yes; adaptive thinking: No. 200k context (not 1M). Max output 64k. 5m cache $6.25, 1h cache $10, cache hits $0.50/MTok. Batch $2.50/$12.50. Reliable knowledge cutoff May 2025; training data cutoff Aug 2025. Snapshot date 20251101 implies a Nov 2025 release. Tentative retirement not sooner than November 24, 2026.",
+      "notes": "API ID claude-opus-4-5-20251101 (alias claude-opus-4-5). Listed under 'Legacy models' on overview. Extended thinking: Yes; adaptive thinking: No. 200k context (not 1M). Max output 64k. 5m cache $6.25, 1h cache $10, cache hits $0.50/MTok. Batch $2.50/$12.50. Reliable knowledge cutoff May 2025; training data cutoff Aug 2025. Snapshot date 20251101 implies a Nov 2025 release. Until 2026-11-23 the deprecations table listed it as Active with a tentative retirement not sooner than November 24, 2026. On November 23, 2026 Anthropic deprecated it: the model-deprecations page lists claude-opus-4-5-20251101 as Deprecated (announced November 23, 2026, retirement January 22, 2027, recommended replacement claude-opus-5-5), and the retirement also covers the undated alias claude-opus-4-5. Lifecycle signal: Anthropic's own deprecations table plus its 2026-11-23 release note (https://platform.claude.com/docs/en/about-claude/model-deprecations).",
       "source_url": "https://platform.claude.com/docs/en/models/overview",
       "open_weight": false,
       "embedding_dimensions": null,
